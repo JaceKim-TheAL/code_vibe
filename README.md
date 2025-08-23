@@ -8,13 +8,13 @@
 - 정의: 사용자의 감성(Vibe), 의도, 맥락을 이해하고 이를 코드로 구현하는 방식
 - 핵심: 직접 코드를 짜는 대신, 자연어로 AI에게 원하는 기능이나 느낌을 전달해 결과물을 얻는 것
 - 예시: “따뜻한 분위기의 블로그 메인 페이지를 만들어줘” → HTML/CSS 코드 자동 생성
-- 주요 방식
-| 방식 | 설명 | 대표도구 |
-|-----|-----|---------| 
-| 자연어 → 코드   | 일상 언어를 코드로 변환  | GitHub Copilot, ChatGPT, Gemini | 
-| 노코드/로우코드  | 코드 없이 앱/웹 제작    | Bubble, Webflow, Power Apps     | 
-| 디자인 기반 생성 | 감성적 UI/UX 자동 생성  | Figma AI, Uizard, Galileo AI    | 
-| 코드 개선/디버깅 | AI가 오류 수정 및 최적화 | DeepCode, ESLint, GPT-4o 등      | 
+- 주요 방식 
+ | 방식 | 설명 | 대표도구 |
+ |-----|-----|---------| 
+ | 자연어 → 코드   | 일상 언어를 코드로 변환  | GitHub Copilot, ChatGPT, Gemini | 
+ | 노코드/로우코드  | 코드 없이 앱/웹 제작    | Bubble, Webflow, Power Apps     | 
+ | 디자인 기반 생성 | 감성적 UI/UX 자동 생성  | Figma AI, Uizard, Galileo AI    | 
+ | 코드 개선/디버깅 | AI가 오류 수정 및 최적화 | DeepCode, ESLint, GPT-4o 등      | 
 
 
 ### ✨ 중요성
