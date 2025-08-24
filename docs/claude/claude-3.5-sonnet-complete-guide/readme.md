@@ -45,17 +45,25 @@ Claude를 사용하기 위해서는 Anthropic사의 Claude 웹사이트(https://
 
 랜딩 페이지 코드 작성 요청을 해보았습니다. 아래와 같이 이미지를 기반으로 랜딩 페이지 코드를 작성 해줍니다.
 
+```shell
 이 디자인을 tailwind css를 사용한 a react component  로 작성해주세요
+```
 
-클로드 아티팩트 (Claude Artifacts) 코드 작성 요청 예시
+| ![그림2-2](./fig02-2_artifacts-ecommerce-landing-page-code-gen-request.png) |
+|:---:|
+| Fig2-2. 클로드 아티팩트 (Claude Artifacts) 코드 작성 요청 예시 |
 
 보시는 것 처럼 Claude가 생성한 코드가 아티팩트 창에 표시됩니다.
 
-클로드 아티팩트 (Claude Artifacts) 코드 작성 예시
+| ![그림2-3](./fig02-3_artifacts-ecommerce-landing-page-code-writing-example.png) |
+|:---:|
+| Fig2-3. 클로드 아티팩트 (Claude Artifacts) 코드 작성 예시 |
 
 또한 코드 뿐만 아니라 Preview 탭을 통해 디자인을 바로 확인할 수 있습니다.
 
-클로드 아티팩트 (Claude Artifacts) 디자인 Preview 예시
+| ![그림2-4](./fig02-4_artifacts-ecommerce-landing-page-preview-example.png) |
+|:---:|
+| Fig2-4. 클로드 아티팩트 (Claude Artifacts) 디자인 Preview 예시 |
 
 코드 생성 뿐만 아니라 블로그 글 작성, 보고 작성 등 다양한 작업을 요청할 수 있습니다. 클로드 아티팩트를 활용하면 클로드와의 대화를 통해 실시간으로 결과물을 확인하고 개선해 나갈 수 있습니다.
 
