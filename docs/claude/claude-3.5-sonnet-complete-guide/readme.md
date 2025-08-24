@@ -129,7 +129,7 @@ Streamlit으로 손쉽게 챗봇 웹앱을 개발하는 예제 코드도 수록�
 클로드 3.5 소넷은 기존 클로드 3.0 소넷 대비 성능이 크게 향상되었지만, 가격은 어떨까요? Anthropic은 클로드 3.5 소넷을 기존 클로드 3.0 소넷과 동일한 가격에 제공하고 있습니다.
 
 클로드 3.0 소넷의 가격은 입력 토큰 100만 개당 $3, 출력 토큰 100만 개당 $15로, 클로드 3.5 소넷도 동일한 가격으로 제공됩니다. 즉, 성능이 향상된 클로드 3.5 소넷을 동일한 비용으로 이용할 수 있다는 것이죠. 이는 기존 클로드 사용자들에게는 물론, 새로운 사용자들에게도 큰 매력이 될 것으로 보입니다.
-
+<!-- 
 <table>
     <thead>
         <tr>
@@ -163,24 +163,16 @@ Streamlit으로 손쉽게 챗봇 웹앱을 개발하는 예제 코드도 수록�
             <td>200K tokens</td>
         </tr>
     </tbody>
-</table>
-
+</table> 
+-->
 
 | 모델명	                | 사용량	    | Input 가격	| Output 가격	  | Context Window |
-|:---:|:---:|:---:|:---:|:---:|
+|:---|:---:|:---:|:---:|:---:|
 | 클로드 3.5 소넷 (Sonnet)	 | 1M tokens	| $3	       | $15	        | 200K tokens     |
 | 클로드 3.0 오푸스 (Opus)	 | 1M tokens	| $15	       | $75	         | 200K tokens    |
 | 클로드 3.0 하이쿠 (Haiku)	 | 1M tokens	| $0.25	       | $1.25	         | 200K tokens    |
 
 클로드 3.5 소넷의 가격을 더 자세히 알고 싶다면 클로드 3.5 소넷 vs GPT4o 가격 비교를 참고해 보시기 바랍니다. 
-
-<!-- 
-모델명	사용량	Input 가격	Output 가격	Context Window
-클로드 3.5 소넷 (Sonnet)	1M tokens	$3	$15	200K tokens
-클로드 3.0 오푸스 (Opus)	1M tokens	$15	$75	200K tokens
-클로드 3.0 하이쿠 (Haiku)	1M tokens	$0.25	$1.25	200K tokens
-클로드 3.5 소넷의 가격을 더 자세히 알고 싶다면 클로드 3.5 소넷 vs GPT4o 가격 비교를 참고해 보시기 바랍니다. 
--->
 
 <br/>
 
@@ -198,6 +190,7 @@ Streamlit으로 손쉽게 챗봇 웹앱을 개발하는 예제 코드도 수록�
 
 아래 Youtube 영상은 아티펙트 기능을 이용해 3분 만에 영어 이야기 생성기 AI 웹서비스를 만드는 방법을 보여줍니다.
 
+<iframe src="https://www.youtube.com/embed/PU5P8PaeiYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 클로드 아티펙트 (Artifects)로 3분만에 AI 웹서비스 만들기
 
