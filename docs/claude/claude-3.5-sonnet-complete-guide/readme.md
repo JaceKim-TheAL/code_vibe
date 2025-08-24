@@ -79,10 +79,16 @@ Claude를 사용하기 위해서는 Anthropic사의 Claude 웹사이트(https://
 
 클로드에게 코드, 문서, 웹 디자인 등을 요청하면 전용 에디터에서 실시간으로 결과물을 확인하고 개선해 나갈 수 있습니다. 대화를 통해 AI의 창작물을 즉각 프로젝트에 활용하는 셈이죠. 단순한 채팅 상대가 아닌, 동적인 작업 공간으로서의 잠재력을 보여주는 대목입니다.
 
-클로드 아티팩트 (Artifacts) 사용 사례
+| ![그림3-1](./fig03-1_claude-3-5-Artifacts-example.png) |
+|:---:|
+| Fig3-1. 클로드 아티팩트 (Artifacts) 사용 사례 |
+
 Artifacts 기능을 활성화 하기 위해서는 프로필 설정의 Feature Preview에서 Artifacts를 활성화해야 합니다. 이후 클로드와의 대화에서 Artifacts 기능을 활용할 수 있습니다.
 
-클로드 아티팩트 (Artifacts) 활성화
+| ![그림3-2](./fig03-2_claude-3-5-Artifacts-setting.png) |
+|:---:|
+| Fig3-2. 클로드 아티팩트 (Artifacts) 활성화 |
+
 향후 클로드 AI는 팀 단위 협업까지 지원할 계획입니다. 앞으로는 기업 전체의 지식과 프로젝트를 하나의 플랫폼에서 안전하게 관리하고, 언제든 클로드의 도움을 받을 수 있게 된다고 하니 궁금증이 커지는데요. 우리 일상에 AI 어시스턴트가 늘 함께하는 미래, 머지않아 현실이 될 것만 같습니다.
 
 <br/>
@@ -95,11 +101,17 @@ Artifacts 기능을 활성화 하기 위해서는 프로필 설정의 Feature Pr
 
 맞춤형 클로드 챗봇을 만들기 위해 아래와 같이 Custom Instructions을 설정 할 수 있습니다.
 
-클로드 프로젝트 Custom Instructions
+| ![그림4-1](./fig04-1_claude-projects-custom-instructions.png) |
+|:---:|
+| Fig4-1. 클로드 프로젝트 Custom Instructions |
 
 또한 지식 기능을 활용해 지식 기반의 챗봇을 만들 수 있습니다.
 
-아래는 클로드 프로젝트로 만든 클로드 챗봇 사례 입니다. 클로드 프로젝트로 만든 클로드 챗봇 사례
+아래는 클로드 프로젝트로 만든 클로드 챗봇 사례 입니다. 
+
+| ![그림4-2](./fig04-2_claude-projects-blog-example2.png) |
+|:---:|
+| Fig4-2. 클로드 프로젝트로 만든 클로드 챗봇 사례 |
 
 맞춤형 클로드 챗봇을 만들기 위한 자세한 방법은 클로드 프로젝트 사용법을 참고해 보시기 바랍니다.
 
@@ -118,11 +130,57 @@ Streamlit으로 손쉽게 챗봇 웹앱을 개발하는 예제 코드도 수록�
 
 클로드 3.0 소넷의 가격은 입력 토큰 100만 개당 $3, 출력 토큰 100만 개당 $15로, 클로드 3.5 소넷도 동일한 가격으로 제공됩니다. 즉, 성능이 향상된 클로드 3.5 소넷을 동일한 비용으로 이용할 수 있다는 것이죠. 이는 기존 클로드 사용자들에게는 물론, 새로운 사용자들에게도 큰 매력이 될 것으로 보입니다.
 
+<table>
+    <thead>
+        <tr>
+            <th>모델명</th>
+            <th>사용량</th>
+            <th>Input 가격</th>
+            <th>Output 가격</th>
+            <th>Context Window</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>클로드 3.5 소넷 (Sonnet)</td>
+            <td>1M tokens</td>
+            <td>$3</td>
+            <td>$15</td>
+            <td>200K tokens</td>
+        </tr>
+        <tr>
+            <td>클로드 3.0 오푸스 (Opus)</td>
+            <td>1M tokens</td>
+            <td>$15</td>
+            <td>$75</td>
+            <td>200K tokens</td>
+        </tr>
+        <tr>
+            <td>클로드 3.0 하이쿠 (Haiku)</td>
+            <td>1M tokens</td>
+            <td>$0.25</td>
+            <td>$1.25</td>
+            <td>200K tokens</td>
+        </tr>
+    </tbody>
+</table>
+
+
+| 모델명	                | 사용량	    | Input 가격	| Output 가격	  | Context Window |
+|---|---|---|---|---|
+| 클로드 3.5 소넷 (Sonnet)	 | 1M tokens	| $3	       | $15	        | 200K tokens     |
+| 클로드 3.0 오푸스 (Opus)	 | 1M tokens	| $15	       | $75	         | 200K tokens    |
+| 클로드 3.0 하이쿠 (Haiku)	 | 1M tokens	| $0.25	       | $1.25	         | 200K tokens    |
+
+클로드 3.5 소넷의 가격을 더 자세히 알고 싶다면 클로드 3.5 소넷 vs GPT4o 가격 비교를 참고해 보시기 바랍니다. 
+
+<!-- 
 모델명	사용량	Input 가격	Output 가격	Context Window
 클로드 3.5 소넷 (Sonnet)	1M tokens	$3	$15	200K tokens
 클로드 3.0 오푸스 (Opus)	1M tokens	$15	$75	200K tokens
 클로드 3.0 하이쿠 (Haiku)	1M tokens	$0.25	$1.25	200K tokens
-클로드 3.5 소넷의 가격을 더 자세히 알고 싶다면 클로드 3.5 소넷 vs GPT4o 가격 비교를 참고해 보시기 바랍니다.
+클로드 3.5 소넷의 가격을 더 자세히 알고 싶다면 클로드 3.5 소넷 vs GPT4o 가격 비교를 참고해 보시기 바랍니다. 
+-->
 
 <br/>
 
