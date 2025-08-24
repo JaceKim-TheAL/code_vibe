@@ -16,9 +16,18 @@
 
 Anthropic은 OpenAI의 출신 직원들이 설립한 회사로, AI의 안전성과 윤리적 사용을 최우선으로 고려합니다. 클로드 AI는 이러한 철학을 바탕으로 개발되었으며, 2023년 Claude 2, 2024년 Claude 3와 Claude 3.5 Sonnet, Haiku 모델을 출시하며 지속적으로 발전하고 있습니다.
 
-5분 만에 체험해보는 클로드 AI의 놀라운 능력
-지금 무료로 시작하기
-클로드 AI vs 챗GPT 차이점
+| ![그림2](./images/0102_claude-ai-fee.png) |
+|:---:|
+| Fig2. 클로드(Claude) 서비스 요금제 |
+
+[[지금 무료로 시작하기]](https://claude.ai/onboarding)
+
+<br/>
+
+[[TOP]](#index)
+
+---
+## 클로드 AI vs 챗GPT 차이점
 클로드 AI와 ChatGPT는 모두 대화형 AI 모델이지만, 몇 가지 중요한 차이점이 있습니다.
 
 특징	클로드 AI	ChatGPT
