@@ -195,7 +195,7 @@ Streamlit으로 손쉽게 챗봇 웹앱을 개발하는 예제 코드도 수록�
 </iframe> 
 -->
 
-클로드 아티펙트 (Artifects)로 3분만에 AI 웹서비스 만들기 [[YOUTUBE 동영상]](https://www.youtube.com/embed/PU5P8PaeiYM)
+[[YOUTUBE 동영상] 클로드 아티펙트 (Artifects)로 3분만에 AI 웹서비스 만들기 ](https://www.youtube.com/embed/PU5P8PaeiYM)
 
 
 <br/>
