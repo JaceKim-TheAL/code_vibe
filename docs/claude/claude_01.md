@@ -3,6 +3,15 @@
 
 ### INDEX
 
+- [클로드 (Claude) AI 란?](#클로드-claude-ai-란)
+- [클로드 AI vs 챗GPT 차이점](#클로드-ai-vs-챗gpt-차이점)
+- [클로드 AI 사용법](#클로드-ai-사용법)
+- [클로드 프로젝트(Claude Projects) 맞춤형 챗봇 만들기](#클로드-프로젝트claude-projects-맞춤형-챗봇-만들기)
+- [클로드 아티팩트 (Claude Artifacts)](#클로드-아티팩트-claude-artifacts)
+- [클로드 분석 도구 (Analysis Tool)](#클로드-분석-도구-analysis-tool)
+- [클로드 컴퓨터 사용 (Claude Computer Use)](#클로드-컴퓨터-사용-claude-computer-use)
+- [결론](#결론)
+
 ---
 # 클로드 (Claude) AI 총정리 | 가장 강력한 글쓰기와 코딩 능력
 인공지능(AI)은 우리의 일상과 업무 방식을 혁신적으로 변화시키고 있습니다. 그 중에서도 클로드 AI는 뛰어난 글쓰기와 코딩 능력으로 주목받고 있는 AI 모델입니다. 이 글에서는 클로드 AI의 정의, 사용법, 주요 기능, 그리고 ChatGPT와의 차이점까지 상세히 알아보겠습니다. 클로드 AI를 활용해 생산성을 극대화하고 싶다면 끝까지 읽어보세요!
