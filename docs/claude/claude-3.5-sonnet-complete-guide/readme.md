@@ -190,11 +190,11 @@ Streamlit으로 손쉽게 챗봇 웹앱을 개발하는 예제 코드도 수록�
 
 아래 Youtube 영상은 아티펙트 기능을 이용해 3분 만에 영어 이야기 생성기 AI 웹서비스를 만드는 방법을 보여줍니다.
 
-<iframe src="https://www.youtube.com/embed/PU5P8PaeiYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
+<iframe src="https://www.youtube.com/embed/PU5P8PaeiYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 클로드 아티펙트 (Artifects)로 3분만에 AI 웹서비스 만들기
+</iframe>
 
-(마이크가 없어 소리가 잘 안들리는 점 미리 양해 부탁 드립니다. ㅠㅠ )
+
 
 <br/>
 
