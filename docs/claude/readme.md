@@ -1,4 +1,4 @@
-🏠 > 클로드 (Claude) >
+🏠 > [클로드 (Claude)](./) >
 <!-- https://www.magicaiprompts.com/docs/claude/ -->
 
 ### INDEX
