@@ -30,16 +30,45 @@ Anthropic은 OpenAI의 출신 직원들이 설립한 회사로, AI의 안전성�
 ## 클로드 AI vs 챗GPT 차이점
 클로드 AI와 ChatGPT는 모두 대화형 AI 모델이지만, 몇 가지 중요한 차이점이 있습니다.
 
-특징	클로드 AI	ChatGPT
-장점	뛰어난 글쓰기와 코딩 능력	멀티모달 (GPT4o) 지원 및 추론 능력 (o1)
-컨텍스트 창 크기	최대 200K 컨텍스트 창 지원	최대 128K 컨텍스트 창 지원
-맞춤형 기능	Claude Projects로 맞춤형 챗봇 제작 가능	GPTs로 맞춤형 챗봇 제작 가능
-데이터 분석 기능	내장된 분석 도구로 데이터 처리 가능	Python 코드 실행을 통한 데이터 처리
-클로드 AI는 특히 데이터 분석과 맞춤형 설정에서 강점을 보이며, ChatGPT보다 더 넓은 컨텍스트 창을 제공해 복잡한 작업에 유리합니다.
+<table>
+    <thead>
+        <tr>
+            <th><strong>특징</strong></th>
+            <th><strong>클로드 AI</strong></th>
+            <th><strong>ChatGPT</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>장점</strong></td>
+            <td>뛰어난 글쓰기와 코딩 능력</td>
+            <td>멀티모달 (GPT4o) 지원 및 추론 능력 (o1)</td>
+        </tr>
+        <tr>
+            <td><strong>컨텍스트 창 크기</strong></td>
+            <td>최대 200K 컨텍스트 창 지원</td>
+            <td>최대 128K 컨텍스트 창 지원</td>
+        </tr>
+        <tr>
+            <td><strong>맞춤형 기능</strong></td>
+            <td>Claude Projects로 맞춤형 챗봇 제작 가능</td>
+            <td>GPTs로 맞춤형 챗봇 제작 가능</td>
+        </tr>
+        <tr>
+            <td><strong>데이터 분석 기능</strong></td>
+            <td>내장된 분석 도구로 데이터 처리 가능</td>
+            <td>Python 코드 실행을 통한 데이터 처리</td>
+        </tr>
+    </tbody>
+</table>
 
-200K 컨텍스트 창의 강력함을 직접 확인하고 싶다면?
-차이를 체험해보기
-클로드 AI 사용법
+<br/>
+
+[[TOP]](#index)
+
+---
+## 클로드 AI 사용법
+
 클로드 AI를 사용하려면 먼저 Claude.ai 웹사이트에 접속해 계정을 생성해야 합니다. 가입 과정은 간단하며, 전화번호 인증을 통해 계정을 활성화할 수 있습니다. 이후 로그인하면 직관적인 인터페이스를 통해 클로드 AI와 대화를 시작할 수 있습니다.
 
 Claude 사용법 첫화면
