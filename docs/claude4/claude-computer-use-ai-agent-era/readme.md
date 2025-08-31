@@ -80,13 +80,13 @@ Anthropic이 공개한 데모 영상을 통해 클로드 컴퓨터 사용의 주
 ## 주의해야 할 점과 한계
 그러나 이러한 혁신적인 기능에도 불구하고 몇 가지 주의해야 할 점들이 있습니다:
 
-보안 및 프라이버시 우려: AI에게 컴퓨터 제어 권한을 부여하는 것은 잠재적인 보안 위험을 동반할 수 있습니다.
+- **보안 및 프라이버시 우려:** AI에게 컴퓨터 제어 권한을 부여하는 것은 잠재적인 보안 위험을 동반할 수 있습니다.
 
-오류 가능성: Anthropic도 인정했듯이 현재 단계에서는 AI의 컴퓨터 사용 능력이 완벽하지 않아 오류 발생 가능성이 있습니다.
+- **오류 가능성:** Anthropic도 인정했듯이 현재 단계에서는 AI의 컴퓨터 사용 능력이 완벽하지 않아 오류 발생 가능성이 있습니다.
 
-윤리적 고려사항: AI의 자율적인 행동이 윤리적 문제를 야기할 수 있어 이에 대한 신중한 접근이 필요합니다.
+- **윤리적 고려사항:** AI의 자율적인 행동이 윤리적 문제를 야기할 수 있어 이에 대한 신중한 접근이 필요합니다.
 
-인간 일자리 대체 우려: AI의 능력 향상으로 인한 인간 일자리 대체 가능성에 대한 사회적 논의가 필요할 것으로 보입니다.
+- **인간 일자리 대체 우려:** AI의 능력 향상으로 인한 인간 일자리 대체 가능성에 대한 사회적 논의가 필요할 것으로 보입니다.
 
 <br/>
 
@@ -104,8 +104,8 @@ Anthropic이 공개한 데모 영상을 통해 클로드 컴퓨터 사용의 주
 
 ---
 ## 참고자료
-Computer use (beta) - Anthropic
-Introducing computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku \ Anthropic
+- [Computer use (beta) - Anthropic](https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/computer-use-tool)
+- [Introducing computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku \ Anthropic](https://www.anthropic.com/news/3-5-models-and-computer-use)
 
 <br/>
 
