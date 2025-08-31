@@ -2,10 +2,15 @@
 
 ### INDEX
 
-- []()
-- []()
-- []()
-- []()
+- [MCP 서버 총정리](#mcp-서버-총정리)
+- [MCP 서버란 무엇인가?](#mcp-서버란-무엇인가)
+- [MCP 서버 구축을 위한 사전 준비](#mcp-서버-구축을-위한-사전-준비)
+- [MCP 서버 구축 단계별 가이드](#mcp-서버-구축-단계별-가이드)
+- [Claude Desktop과 MCP 서버 연결하기](#claude-desktop과-mcp-서버-연결하기)
+- [MCP 서버 디버깅 및 문제 해결](#mcp-서버-디버깅-및-문제-해결)
+- [MCP 서버 확장 및 최적화](#mcp-서버-확장-및-최적화)
+- [실제 사례: 날씨 정보 제공 MCP 서버](#실제-사례-날씨-정보-제공-mcp-서버)
+- [결론](#결론)
 - [참고자료](#참고자료) 
 
 ---
@@ -651,7 +656,7 @@ MCP 기술은 계속 발전하고 있으며, 이를 통해 AI 모델의 가능�
 [[TOP]](#index)
 
 ---
-## 참고 자료
+## 참고자료
 - [Model Context Protocol 공식 문서](https://modelcontextprotocol.io/docs/getting-started/intro)
 - [Model Context Protocol (MCP) Tutorial](https://modelcontextprotocol.io/docs/getting-started/intro)
 
