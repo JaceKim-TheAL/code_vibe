@@ -365,12 +365,12 @@ if __name__ == "__main__":
 
 ### Claude Desktop 설정 방법
 
-- ❶ Claude Desktop 다운로드 및 설치
+#### 1️⃣ Claude Desktop 다운로드 및 설치
 
   - macOS 또는 Windows용 Claude Desktop을 다운로드하여 설치합니다 (Linux는 아직 지원되지 않음)
   - 이미 설치되어 있다면 Claude 메뉴에서 "Check for Updates..."를 선택하여 최신 버전으로 업데이트
 
-- ❷ Claude Desktop 구성 파일 설정
+#### 2️⃣ Claude Desktop 구성 파일 설정
 
   - Claude 메뉴에서 "Settings..." 선택 (앱 내의 Claude Account Settings가 아님)
 
@@ -389,7 +389,7 @@ if __name__ == "__main__":
     - macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
     - Windows: %APPDATA%\Claude\claude_desktop_config.json
 
-- ❸ 구성 파일에 MCP 서버 정보 추가:
+#### 3️⃣ 구성 파일에 MCP 서버 정보 추가:
 ```json
 {
     "mcpServers": {
@@ -406,13 +406,13 @@ if __name__ == "__main__":
 }
 ```
 
-- ❹ Claude Desktop 재시작
+#### 4️⃣ Claude Desktop 재시작
 
 ### 연결 확인 및 테스트
-- ❶ Claude Desktop 시작
-- ❷ 채팅 인터페이스에서 MCP 도구 아이콘(망치 아이콘) 클릭
-- ❸ 서버 목록에서 연결할 MCP 서버 선택
-- ❹ 리소스, 도구 또는 프롬프트를 사용하여 테스트
+#### 1️⃣ Claude Desktop 시작
+#### 2️⃣ 채팅 인터페이스에서 MCP 도구 아이콘(망치 아이콘) 클릭
+#### 3️⃣ 서버 목록에서 연결할 MCP 서버 선택
+#### 4️⃣ 리소스, 도구 또는 프롬프트를 사용하여 테스트
 
 예시 명령:
 
@@ -430,17 +430,17 @@ MCP 서버 개발 시 발생할 수 있는 문제를 해결하는 방법입니�
 
 ### 일반적인 문제 및 해결 방법
 
-#### ❶ 서버 연결 실패
+#### 1️⃣ 서버 연결 실패
   - 파일 경로가 올바른지 확인
   - 실행 권한 확인 (chmod +x)
   - 구성 파일의 JSON 형식 확인
 
-#### ❷ 도구 실행 오류
+#### 2️⃣ 도구 실행 오류
   - 매개변수 타입 확인
   - 비동기 함수 처리 확인
   - 에러 처리 추가
 
-#### ❸ 리소스 로드 실패
+#### 3️⃣ 리소스 로드 실패
   - URI 형식 확인
   - MIME 타입 설정 확인
 
@@ -659,16 +659,17 @@ MCP 서버는 AI 모델과 외부 시스템을 연결하는 강력한 도구입�
 
 이제 여러분은 다음을 할 수 있게 되었습니다:
 
-MCP 서버의 핵심 개념 이해
-기본 MCP 서버 구축
-리소스, 도구, 프롬프트 구현
-Claude Desktop과 연결 설정
-문제 해결 및 디버깅
-MCP 서버 확장 및 최적화
+  - MCP 서버의 핵심 개념 이해
+  - 기본 MCP 서버 구축
+  - 리소스, 도구, 프롬프트 구현
+  - Claude Desktop과 연결 설정
+  - 문제 해결 및 디버깅
+  - MCP 서버 확장 및 최적화
+
 MCP 기술은 계속 발전하고 있으며, 이를 통해 AI 모델의 가능성이 더욱 확장될 것입니다. 이 가이드가 여러분의 MCP 서버 구축 여정에 도움이 되길 바랍니다!
 
 이제 당신만의 MCP 서버를 만들 차례입니다!
-지금 시작하기
+[[지금 시작하기]](https://modelcontextprotocol.io/docs/getting-started/intro)
 
 <br/>
 
