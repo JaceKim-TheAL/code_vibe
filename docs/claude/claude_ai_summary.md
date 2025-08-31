@@ -1,4 +1,4 @@
-🏠 > [클로드 (Claude)](./) >
+🏠 > [클로드 (Claude)](./) > [`Claude AI Summary`](./claude_ai_summary.md)
 <!-- https://www.magicaiprompts.com/docs/claude/ -->
 
 ### INDEX
