@@ -411,10 +411,10 @@ if __name__ == "__main__":
 <br/>
 
 ### 연결 확인 및 테스트
-  ❶ Claude Desktop 시작 <br/>
-  ❷ 채팅 인터페이스에서 MCP 도구 아이콘(망치 아이콘) 클릭 <br/>
-  ❸ 서버 목록에서 연결할 MCP 서버 선택 <br/>
-  ❹ 리소스, 도구 또는 프롬프트를 사용하여 테스트 <br/>
+&nbsp;&nbsp;  ❶ Claude Desktop 시작 <br/>
+&nbsp;&nbsp;  ❷ 채팅 인터페이스에서 MCP 도구 아이콘(망치 아이콘) 클릭 <br/>
+&nbsp;&nbsp;  ❸ 서버 목록에서 연결할 MCP 서버 선택 <br/>
+&nbsp;&nbsp;  ❹ 리소스, 도구 또는 프롬프트를 사용하여 테스트 <br/>
 
 예시 명령:
 
