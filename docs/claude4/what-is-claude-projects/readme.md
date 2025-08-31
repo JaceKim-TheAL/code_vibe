@@ -206,7 +206,7 @@ GPT에 대해 궁금하시고 관심 있으신 분들을 위하여 GPT 개발 �
     <tr>
         <td rowspan="3">
             <div style="border-radius: 12px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;"><img
-                    src="./img/how-to-create-gpt.jpeg" alt="책 표지" style="width: 300; height: auto; display: block;">
+                    src="./img/how-to-create-gpt.jpeg" alt="책 표지" style="width: 400; height: auto; display: block;">
             </div>
         </td>
         <td>
