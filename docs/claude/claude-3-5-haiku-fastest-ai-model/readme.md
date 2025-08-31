@@ -2,7 +2,13 @@
 
 ### INDEX
 
-- []()
+- [Claude 3.5 하이쿠 (Haiku) 란?](#claude-35-하이쿠-haiku-란)
+- [Claude 3.5 하이쿠의 핵심 특징](#claude-35-하이쿠의-핵심-특징)
+- [Claude 3.5 하이쿠 (Haiku) 성능 벤치마크](#claude-35-하이쿠-haiku-성능-벤치마크)
+- [Claude 3.5 하이쿠 vs GPT-4o mini 비교](#claude-35-하이쿠-vs-gpt-4o-mini-비교)
+- [실제 활용 사례와 적용 분야](#실제-활용-사례와-적용-분야)
+- [도입 시 고려사항](#도입-시-고려사항)
+- [결론 및 전망](#결론-및-전망)
  
 ---
 # Claude 3.5 하이쿠 (Haiku) 란? 
