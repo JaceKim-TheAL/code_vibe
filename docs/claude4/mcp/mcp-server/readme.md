@@ -14,7 +14,7 @@
 
 MCP 서버를 구축하고 설정하는 것은 처음에는 복잡해 보일 수 있지만, 올바른 가이드와 도구를 사용하면 누구나 쉽게 시작할 수 있습니다. 이 글에서는 MCP 서버의 기본 개념부터 설치, 설정, 확장 방법까지 단계별로 설명합니다. 초보자도 따라 할 수 있도록 간단하고 명확하게 작성했으니, 끝까지 읽어보세요!
 
-MCP 서버란 무엇인가?
+## MCP 서버란 무엇인가?
 MCP 서버는 **MCP(모델 컨텍스트 프로토콜)**의 일부로, 대규모 언어 모델(LLM)이 외부 데이터 소스와 도구에 접근할 수 있도록 돕는 프로그램입니다. 이는 AI 시스템과 외부 시스템 간의 상호작용을 표준화하여, 데이터를 효율적으로 교환하고 작업을 수행할 수 있게 합니다.
 
 MCP 서버의 역할
@@ -36,7 +36,13 @@ MCP 서버 세가지 기능
 프롬프트(Prompts): 특정 작업을 수행하기 위한 템플릿 제공
 10분이면 충분합니다. 지금 바로 시작해보세요!
 MCP 서버 구축하기
-MCP 서버 구축을 위한 사전 준비
+
+<br/>
+
+[[TOP]](#index)
+
+---
+## MCP 서버 구축을 위한 사전 준비
 MCP 서버를 구축하기 전에 필요한 소프트웨어와 하드웨어를 준비해야 합니다. 아래는 필수 준비 사항입니다.
 
 필요한 소프트웨어 및 하드웨어 요구사항
@@ -47,7 +53,7 @@ MCP 프레임워크 다운로드 및 설치 - Python 버전
 MCP 프레임워크는 MCP 서버의 핵심입니다.
 
 Python:
-
+```python
 # uv 설치 (권장)
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
@@ -57,16 +63,23 @@ cd my-first-mcp-server
 uv venv
 source .venv/bin/activate
 uv add "mcp[cli]" httpx
+```
 
 개발 환경 설정
 VS Code나 Cursor AI 와 같은 IDE를 사용하면 개발 생산성을 높일 수 있습니다.
 
-MCP 서버 구축 단계별 가이드
+<br/>
+
+[[TOP]](#index)
+
+---
+## MCP 서버 구축 단계별 가이드
 이제 MCP 서버를 구축하는 구체적인 단계를 살펴보겠습니다.
 
 1. 기본 MCP 서버 구현
 Python을 이용한 기본 서버 구현
-프로젝트 생성 및 설정 방법
+- 프로젝트 생성 및 설정 방법
+```shell
 # 프로젝트를 위한 새 디렉토리 생성
 uv init weather
 cd weather
@@ -80,10 +93,11 @@ uv add "mcp[cli]" httpx
 
 # 서버 파일 생성
 touch weather.py
+```
 
-패키지 가져오기 및 인스턴스 설정
-weather.py 파일 상단에 다음 코드를 추가합니다:
-
+- 패키지 가져오기 및 인스턴스 설정
+`weather.py` 파일 상단에 다음 코드를 추가합니다:
+```python
 from typing import Any
 import httpx
 from mcp.server.fastmcp import FastMCP
@@ -94,12 +108,13 @@ mcp = FastMCP("weather")
 # 상수
 NWS_API_BASE = "https://api.weather.gov"
 USER_AGENT = "weather-app/1.0"
+```
 
 FastMCP 클래스는 Python 타입 힌트와 독스트링을 활용하여 도구 정의를 자동으로 생성하므로 MCP 도구를 쉽게 만들고 관리할 수 있습니다.
 
-헬퍼 함수
+- 헬퍼 함수
 다음으로 National Weather Service API에서 데이터를 쿼리하고 형식을 지정하는 헬퍼 함수를 추가합니다:
-
+```python
 async def make_nws_request(url: str) -> dict[str, Any] | None:
     """NWS API에 적절한 오류 처리로 요청합니다."""
     headers = {
@@ -124,11 +139,11 @@ def format_alert(feature: dict) -> str:
 설명: {props.get('description', '설명 없음')}
 지침: {props.get('instruction', '특별한 지침 없음')}
 """
-
+```
 
 도구 실행 구현
 도구 실행 핸들러는 각 도구의 로직을 실제로 실행하는 역할을 합니다:
-
+```python
 @mcp.tool()
 async def get_alerts(state: str) -> str:
     """미국 주의 기상 알림을 가져옵니다.
@@ -183,7 +198,7 @@ async def get_forecast(latitude: float, longitude: float) -> str:
         forecasts.append(forecast)
 
     return "\n---\n".join(forecasts)
-
+```
 
 서버 실행
 마지막으로 서버를 초기화하고 실행합니다:
@@ -202,6 +217,7 @@ uv run weather.py
 리소스는 LLM이 읽을 수 있는 데이터를 제공합니다. 다음은 간단한 리소스 구현 예제입니다:
 
 Python 리소스 예제
+```python
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("resource-server")
@@ -220,11 +236,13 @@ async def about_info():
 
 if __name__ == "__main__":
     mcp.run(transport='stdio')
+```
 
 3. 도구(Tools) 구현하기
 도구는 LLM이 사용자 요청에 따라 실행할 수 있는 함수입니다. 다음은 간단한 날씨 정보 제공 도구 예제입니다:
 
 Python 도구 예제
+```python
 from mcp.server.fastmcp import FastMCP
 import httpx
 
@@ -286,11 +304,13 @@ async def get_forecast(latitude: float, longitude: float) -> str:
 if __name__ == "__main__":
     mcp.run(transport='stdio')
 
+```
 
 4. 프롬프트(Prompts) 구현하기
 프롬프트는 LLM에게 특정 작업 수행을 위한 템플릿을 제공합니다:
 
 Python 프롬프트 예제
+```python
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("prompts-server")
@@ -322,8 +342,14 @@ def blog_prompt():
 
 if __name__ == "__main__":
     mcp.run(transport='stdio')
+```
 
-Claude Desktop과 MCP 서버 연결하기
+<br/>
+
+[[TOP]](#index)
+
+---
+## Claude Desktop과 MCP 서버 연결하기
 개발한 MCP 서버를 Claude Desktop과 연결하는 방법은 다음과 같습니다:
 
 Claude Desktop 설정 방법
@@ -367,7 +393,14 @@ Claude Desktop 시작
 
 "오늘 서울의 날씨는 어때?"
 "내일 뉴욕의 날씨 예보를 보여줘."
-MCP 서버 디버깅 및 문제 해결
+
+
+<br/>
+
+[[TOP]](#index)
+
+---
+## MCP 서버 디버깅 및 문제 해결
 MCP 서버 개발 시 발생할 수 있는 문제를 해결하는 방법입니다.
 
 일반적인 문제 및 해결 방법
@@ -385,12 +418,18 @@ MCP 서버 개발 시 발생할 수 있는 문제를 해결하는 방법입니�
 
 URI 형식 확인
 MIME 타입 설정 확인
-MCP 서버 확장 및 최적화
+
+<br/>
+
+[[TOP]](#index)
+
+---
+## MCP 서버 확장 및 최적화
 MCP 서버를 더 강력하게 만들기 위한 확장 및 최적화 방법입니다.
 
 데이터베이스 연결
 MCP 서버에 데이터베이스를 연결하여 동적 데이터를 제공할 수 있습니다:
-
+```python
 import sqlite3
 from mcp.server.fastmcp import FastMCP
 
@@ -423,11 +462,11 @@ async def search_products(query: str) -> str:
         results.append(f"ID: {product['id']}, 이름: {product['name']}, 가격: {product['price']}원")
     
     return "\n".join(results)
-
+```
 
 API 통합
 외부 API와 통합하여 MCP 서버의 기능을 확장할 수 있습니다:
-
+```python
 import httpx
 from mcp.server.fastmcp import FastMCP
 
@@ -456,6 +495,7 @@ async def translate_text(text: str, target_lang: str) -> str:
         
         data = response.json()
         return data["translated_text"]
+```
 
 성능 최적화 팁
 MCP 서버의 성능을 개선하기 위한 팁:
@@ -476,9 +516,16 @@ Redis와 같은 인메모리 캐시 활용
 
 예외 상황 대비
 적절한 오류 메시지 제공
-실제 사례: 날씨 정보 제공 MCP 서버
-실제 작동하는 날씨 정보 제공 MCP 서버의 전체 코드입니다. 이 예제를 통해 MCP 서버의 기능을 종합적으로 이해할 수 있습니다.
 
+
+<br/>
+
+[[TOP]](#index)
+
+---
+## 실제 사례: 날씨 정보 제공 MCP 서버
+실제 작동하는 날씨 정보 제공 MCP 서버의 전체 코드입니다. 이 예제를 통해 MCP 서버의 기능을 종합적으로 이해할 수 있습니다.
+```python
 from typing import Any
 import httpx
 from mcp.server.fastmcp import FastMCP
@@ -576,8 +623,14 @@ async def get_forecast(latitude: float, longitude: float) -> str:
 if __name__ == "__main__":
     mcp.run(transport='stdio')
 
+```
 
-결론
+<br/>
+
+[[TOP]](#index)
+
+---
+## 결론
 MCP 서버는 AI 모델과 외부 시스템을 연결하는 강력한 도구입니다. 이 가이드에서는 MCP 서버의 기본 개념부터 구축, 설정, 확장까지 단계별로 알아보았습니다.
 
 이제 여러분은 다음을 할 수 있게 되었습니다:
@@ -592,7 +645,18 @@ MCP 기술은 계속 발전하고 있으며, 이를 통해 AI 모델의 가능�
 
 이제 당신만의 MCP 서버를 만들 차례입니다!
 지금 시작하기
-참고 자료
-Model Context Protocol 공식 문서
-Model Context Protocol (MCP) Tutorial
 
+<br/>
+
+[[TOP]](#index)
+
+---
+## 참고 자료
+- [Model Context Protocol 공식 문서](https://modelcontextprotocol.io/docs/getting-started/intro)
+- [Model Context Protocol (MCP) Tutorial](https://modelcontextprotocol.io/docs/getting-started/intro)
+
+<br/>
+
+[[TOP]](#index)
+
+---
