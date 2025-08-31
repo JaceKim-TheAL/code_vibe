@@ -1,4 +1,4 @@
-🏠 > [클로드 (Claude)](./) > [`Claude AI Summary`](./claude_ai_summary.md)
+🏠 > [클로드 (Claude)](./) > `클로드 (Claude) AI 총정리 - 가장 강력한 글쓰기와 코딩 능력`
 <!-- https://www.magicaiprompts.com/docs/claude/ -->
 
 ### INDEX
