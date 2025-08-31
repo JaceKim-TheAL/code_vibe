@@ -121,7 +121,7 @@ YouTube 동영상의 자막을 가져올 수 있는 Model Context Protocol 서�
       - 언어별 자막 조회
       - 자세한 메타데이터 포함 응답
 
-###Claude Desktop 설정
+### Claude Desktop 설정
 
 ```json
 {
@@ -134,15 +134,22 @@ YouTube 동영상의 자막을 가져올 수 있는 Model Context Protocol 서�
 }
 ```
 
-다른 설치 방법 (mcp-get)
+### 다른 설치 방법 (mcp-get)
+```shell
 npx @michaellatman/mcp-get@latest install @kimtaeyoon83/mcp-server-youtube-transcript
+```
 
+설치와 설정이 완료 되면 아래와 같이 유튜브 영상을 분석해서 요약해 달라고 요청 할 수 있습니다. 
 
-설치와 설정이 완료 되면 아래와 같이 유튜브 영상을 분석해서 요약해 달라고 요청 할 수 있습니다. MCP 사용법 사례
+| ![그림3](./img/fig03_chat-with-mcp.png) |
+|:---:|
+| Fig3. MCP 사용법 사례 |
 
 MCP를 사용할지 확인 팝업이 나오고 허용하게 되면 아래이 유튜브 내용을 분석한 답변을 확인 할 수 있습니다.
 
-MCP 사용 응답 사례
+| ![그림4](./img/fig04_mcp-response-example.png) |
+|:---:|
+| Fig4. MCP 사용 응답 사례 |
 
 <br/>
 
@@ -152,8 +159,8 @@ MCP 사용 응답 사례
 ## MCP 서버 모음 사례 공유
 그외 유용한 MCP 서버를 모아둔 사례를 공유 합니다.
 
-Smithery : 다양한 MCP 서버를 검색하고, 설치할 수 있는 플랫폼
-ModelContextProtocol 공식 서버 리스트 : GitHub에 공개된 공식 MCP 서버 구현 모음
+- [[Smithery]](https://smithery.ai/) : 다양한 MCP 서버를 검색하고, 설치할 수 있는 플랫폼
+- [[ModelContextProtocol 공식 서버 리스트]](https://github.com/modelcontextprotocol/servers) : GitHub에 공개된 공식 MCP 서버 구현 모음
 
 
 <br/>
@@ -164,12 +171,13 @@ ModelContextProtocol 공식 서버 리스트 : GitHub에 공개된 공식 MCP �
 ## MCP 사용 시 유용한 팁과 주의사항
 MCP를 처음 사용하는 사용자라면 몇 가지 팁과 주의사항을 참고하세요.
 
-초보자를 위한 MCP 활용 팁
-작은 프로젝트부터 시작: 처음에는 간단한 파일 검색이나 요약 작업부터 시작하세요.
-문서화 활용: MCP 공식 문서와 튜토리얼을 참고하면 설정과 활용이 훨씬 쉬워집니다.
-MCP 사용 시 흔히 발생하는 문제와 해결 방법
-설치 오류: Node.js와 MCP 서버가 제대로 설치되었는지 확인하세요.
-서버 연결 문제: 설정 파일(claude_desktop_config.json)의 경로와 명령어를 다시 확인하세요.
+### 초보자를 위한 MCP 활용 팁
+- **작은 프로젝트부터 시작:** 처음에는 간단한 파일 검색이나 요약 작업부터 시작하세요.
+- **문서화 활용:** MCP 공식 문서와 튜토리얼을 참고하면 설정과 활용이 훨씬 쉬워집니다.
+
+### MCP 사용 시 흔히 발생하는 문제와 해결 방법
+- **설치 오류:** Node.js와 MCP 서버가 제대로 설치되었는지 확인하세요.
+- **서버 연결 문제:** 설정 파일(claude_desktop_config.json)의 경로와 명령어를 다시 확인하세요.
 
 <br/>
 
@@ -179,10 +187,10 @@ MCP 사용 시 흔히 발생하는 문제와 해결 방법
 ## 결론 및 다음 단계
 MCP는 AI 기술을 활용한 작업을 간소화하고, 생산성을 극대화하는 강력한 도구입니다. Claude Desktop과의 통합을 통해 파일 분석, 검색, 데이터 관리 등 다양한 작업을 효율적으로 수행할 수 있습니다.
 
-MCP를 통해 얻을 수 있는 이점 요약
+### MCP를 통해 얻을 수 있는 이점 요약
 MCP는 통합성과 확장성을 제공하여 AI 기술의 활용 범위를 넓혀줍니다. 이를 통해 사용자는 복잡한 작업을 간단히 처리하고, 생산성을 극대화할 수 있습니다.
 
-추가 학습 리소스 및 추천 자료
+### 추가 학습 리소스 및 추천 자료
 - [MCP 공식 문서](https://docs.anthropic.com/en/docs/mcp)
 - [Claude Desktop 사용 가이드](https://modelcontextprotocol.io/quickstart/user)
 
