@@ -365,12 +365,12 @@ if __name__ == "__main__":
 
 ### Claude Desktop 설정 방법
 
-- 1. Claude Desktop 다운로드 및 설치
+- ❶ Claude Desktop 다운로드 및 설치
 
   - macOS 또는 Windows용 Claude Desktop을 다운로드하여 설치합니다 (Linux는 아직 지원되지 않음)
   - 이미 설치되어 있다면 Claude 메뉴에서 "Check for Updates..."를 선택하여 최신 버전으로 업데이트
 
-- 2. Claude Desktop 구성 파일 설정
+- ❷ Claude Desktop 구성 파일 설정
 
   - Claude 메뉴에서 "Settings..." 선택 (앱 내의 Claude Account Settings가 아님)
 
@@ -389,7 +389,7 @@ if __name__ == "__main__":
     - macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
     - Windows: %APPDATA%\Claude\claude_desktop_config.json
 
-- 3. 구성 파일에 MCP 서버 정보 추가:
+- ❸ 구성 파일에 MCP 서버 정보 추가:
 ```json
 {
     "mcpServers": {
@@ -406,7 +406,7 @@ if __name__ == "__main__":
 }
 ```
 
-- 4. Claude Desktop 재시작
+- ❹ Claude Desktop 재시작
 
 ### 연결 확인 및 테스트
 - ❶ Claude Desktop 시작
@@ -428,21 +428,21 @@ if __name__ == "__main__":
 ## MCP 서버 디버깅 및 문제 해결
 MCP 서버 개발 시 발생할 수 있는 문제를 해결하는 방법입니다.
 
-일반적인 문제 및 해결 방법
-서버 연결 실패
+### 일반적인 문제 및 해결 방법
 
-파일 경로가 올바른지 확인
-실행 권한 확인 (chmod +x)
-구성 파일의 JSON 형식 확인
-도구 실행 오류
+#### ❶ 서버 연결 실패
+  - 파일 경로가 올바른지 확인
+  - 실행 권한 확인 (chmod +x)
+  - 구성 파일의 JSON 형식 확인
 
-매개변수 타입 확인
-비동기 함수 처리 확인
-에러 처리 추가
-리소스 로드 실패
+#### ❷ 도구 실행 오류
+  - 매개변수 타입 확인
+  - 비동기 함수 처리 확인
+  - 에러 처리 추가
 
-URI 형식 확인
-MIME 타입 설정 확인
+#### ❸ 리소스 로드 실패
+  - URI 형식 확인
+  - MIME 타입 설정 확인
 
 <br/>
 
@@ -452,7 +452,7 @@ MIME 타입 설정 확인
 ## MCP 서버 확장 및 최적화
 MCP 서버를 더 강력하게 만들기 위한 확장 및 최적화 방법입니다.
 
-데이터베이스 연결
+### 데이터베이스 연결
 MCP 서버에 데이터베이스를 연결하여 동적 데이터를 제공할 수 있습니다:
 ```python
 import sqlite3
@@ -489,7 +489,7 @@ async def search_products(query: str) -> str:
     return "\n".join(results)
 ```
 
-API 통합
+### API 통합
 외부 API와 통합하여 MCP 서버의 기능을 확장할 수 있습니다:
 ```python
 import httpx
@@ -522,7 +522,7 @@ async def translate_text(text: str, target_lang: str) -> str:
         return data["translated_text"]
 ```
 
-성능 최적화 팁
+### 성능 최적화 팁
 MCP 서버의 성능을 개선하기 위한 팁:
 
 비동기 처리 활용
