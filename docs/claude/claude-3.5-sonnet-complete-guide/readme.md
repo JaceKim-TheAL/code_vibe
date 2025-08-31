@@ -22,7 +22,7 @@
 ## 클로드 3.5 소넷 이란?
 클로드 3.5 소넷은 Anthropic이 야심 차게 선보인 최신 AI 모델입니다. 기존 클로드 3 오푸스(Opus)의 후속 버전으로, 더욱 뛰어난 추론 능력과 지식 습득력, 그리고 자연스러운 언어 생성 능력을 갖추고 있습니다.
 
-| ![그림1](./fig01_claude-3-5-positioning.png) |
+| ![그림1](./img/fig01_claude-3-5-positioning.png) |
 |:---:|
 | Fig1. 클로드 3.5 소넷 |
 
@@ -39,7 +39,7 @@ Claude를 사용하려면, Anthropic사의 Claude 웹사이트에 방문하여 �
 ### 1) 클로드(Claude) 접속 및 로그인 방법
 Claude를 사용하기 위해서는 Anthropic사의 Claude 웹사이트(https://claude.ai)에 방문하여 계정을 생성하거나 로그인합니다. 계정을 생성하고 로그인하면 Claude와의 대화를 시작할 수 있습니다. 사용자 인터페이스를 통해 다양한 기능에 쉽게 접근할 수 있으며, 개인화 설정을 통해 사용 경험을 최적화할 수 있습니다.
 
-| ![그림2-1](./fig02-1_claude-3.5-sonnect-main-screen.png) |
+| ![그림2-1](./img/fig02-1_claude-3.5-sonnect-main-screen.png) |
 |:---:|
 | Fig2-1. 클로드(Claude) AI 시작 화면 - 클로드 3.5 소넷 |
 
@@ -49,19 +49,19 @@ Claude를 사용하기 위해서는 Anthropic사의 Claude 웹사이트(https://
 이 디자인을 tailwind css를 사용한 a react component  로 작성해주세요
 ```
 
-| ![그림2-2](./fig02-2_artifacts-ecommerce-landing-page-code-gen-request.png) |
+| ![그림2-2](./img/fig02-2_artifacts-ecommerce-landing-page-code-gen-request.png) |
 |:---:|
 | Fig2-2. 클로드 아티팩트 (Claude Artifacts) 코드 작성 요청 예시 |
 
 보시는 것 처럼 Claude가 생성한 코드가 아티팩트 창에 표시됩니다.
 
-| ![그림2-3](./fig02-3_artifacts-ecommerce-landing-page-code-writing-example.png) |
+| ![그림2-3](./img/fig02-3_artifacts-ecommerce-landing-page-code-writing-example.png) |
 |:---:|
 | Fig2-3. 클로드 아티팩트 (Claude Artifacts) 코드 작성 예시 |
 
 또한 코드 뿐만 아니라 Preview 탭을 통해 디자인을 바로 확인할 수 있습니다.
 
-| ![그림2-4](./fig02-4_artifacts-ecommerce-landing-page-preview-example.png) |
+| ![그림2-4](./img/fig02-4_artifacts-ecommerce-landing-page-preview-example.png) |
 |:---:|
 | Fig2-4. 클로드 아티팩트 (Claude Artifacts) 디자인 Preview 예시 |
 
@@ -79,13 +79,13 @@ Claude를 사용하기 위해서는 Anthropic사의 Claude 웹사이트(https://
 
 클로드에게 코드, 문서, 웹 디자인 등을 요청하면 전용 에디터에서 실시간으로 결과물을 확인하고 개선해 나갈 수 있습니다. 대화를 통해 AI의 창작물을 즉각 프로젝트에 활용하는 셈이죠. 단순한 채팅 상대가 아닌, 동적인 작업 공간으로서의 잠재력을 보여주는 대목입니다.
 
-| ![그림3-1](./fig03-1_claude-3-5-Artifacts-example.png) |
+| ![그림3-1](./img/fig03-1_claude-3-5-Artifacts-example.png) |
 |:---:|
 | Fig3-1. 클로드 아티팩트 (Artifacts) 사용 사례 |
 
 Artifacts 기능을 활성화 하기 위해서는 프로필 설정의 Feature Preview에서 Artifacts를 활성화해야 합니다. 이후 클로드와의 대화에서 Artifacts 기능을 활용할 수 있습니다.
 
-| ![그림3-2](./fig03-2_claude-3-5-Artifacts-setting.png) |
+| ![그림3-2](./img/fig03-2_claude-3-5-Artifacts-setting.png) |
 |:---:|
 | Fig3-2. 클로드 아티팩트 (Artifacts) 활성화 |
 
@@ -101,7 +101,7 @@ Artifacts 기능을 활성화 하기 위해서는 프로필 설정의 Feature Pr
 
 맞춤형 클로드 챗봇을 만들기 위해 아래와 같이 Custom Instructions을 설정 할 수 있습니다.
 
-| ![그림4-1](./fig04-1_claude-projects-custom-instructions.png) |
+| ![그림4-1](./img/fig04-1_claude-projects-custom-instructions.png) |
 |:---:|
 | Fig4-1. 클로드 프로젝트 Custom Instructions |
 
@@ -109,7 +109,7 @@ Artifacts 기능을 활성화 하기 위해서는 프로필 설정의 Feature Pr
 
 아래는 클로드 프로젝트로 만든 클로드 챗봇 사례 입니다. 
 
-| ![그림4-2](./fig04-2_claude-projects-blog-example2.png) |
+| ![그림4-2](./img/fig04-2_claude-projects-blog-example2.png) |
 |:---:|
 | Fig4-2. 클로드 프로젝트로 만든 클로드 챗봇 사례 |
 
