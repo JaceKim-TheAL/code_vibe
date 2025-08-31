@@ -525,22 +525,21 @@ async def translate_text(text: str, target_lang: str) -> str:
 ### 성능 최적화 팁
 MCP 서버의 성능을 개선하기 위한 팁:
 
-비동기 처리 활용
+#### 1️⃣ 비동기 처리 활용
+  - Python에서는 async/await 사용
+  - JavaScript에서는 Promise 활용
 
-Python에서는 async/await 사용
-JavaScript에서는 Promise 활용
-캐싱 구현
+#### 2️⃣ 캐싱 구현
+  - 자주 요청되는 데이터 캐싱
+  - Redis와 같은 인메모리 캐시 활용
 
-자주 요청되는 데이터 캐싱
-Redis와 같은 인메모리 캐시 활용
-리소스 효율적 관리
+#### 3️⃣ 리소스 효율적 관리
+  - 커넥션 풀 사용
+  - 메모리 누수 방지
 
-커넥션 풀 사용
-메모리 누수 방지
-에러 처리 강화
-
-예외 상황 대비
-적절한 오류 메시지 제공
+#### 4️⃣ 에러 처리 강화
+  - 예외 상황 대비
+  - 적절한 오류 메시지 제공
 
 
 <br/>
