@@ -22,25 +22,29 @@ MCP 서버를 구축하고 설정하는 것은 처음에는 복잡해 보일 수
 ## MCP 서버란 무엇인가?
 MCP 서버는 [**MCP(모델 컨텍스트 프로토콜)**](../mcp/) 의 일부로, 대규모 언어 모델(LLM)이 외부 데이터 소스와 도구에 접근할 수 있도록 돕는 프로그램입니다. 이는 AI 시스템과 외부 시스템 간의 상호작용을 표준화하여, 데이터를 효율적으로 교환하고 작업을 수행할 수 있게 합니다.
 
-MCP 서버의 역할
+### MCP 서버의 역할
 MCP 서버는 LLM이 외부 데이터와 상호작용할 수 있도록 지원합니다. 예를 들어, 파일 읽기, API 호출, 데이터베이스 접근 등을 가능하게 합니다. 이를 통해 LLM의 기능을 확장하고, 사용자 경험을 개선할 수 있습니다.
 
-MCP 서버를 사용하는 이유
+### MCP 서버를 사용하는 이유
 MCP 서버를 사용하면 다음과 같은 이점이 있습니다:
 
-데이터 접근성 향상: LLM이 실시간 데이터에 접근 가능
-기능 확장: 기존 AI 모델에 새로운 도구와 기능 추가
-표준화된 통합: 다양한 LLM과 호환 가능
-MCP 서버의 주요 기능
+- **데이터 접근성 향상:** LLM이 실시간 데이터에 접근 가능
+- **기능 확장:** 기존 AI 모델에 새로운 도구와 기능 추가
+- **표준화된 통합:** 다양한 LLM과 호환 가능
+
+### MCP 서버의 주요 기능
 MCP 서버는 크게 세 가지 기능을 제공합니다:
 
-MCP 서버 세가지 기능
+| ![그림1](./img/fig01_mcp-server-features.png) |
+|:---:|
+| Fig1. MCP 서버 세가지 기능 |
 
-리소스(Resources): 파일, 데이터베이스, API 응답 등 읽기 전용 데이터 제공
-도구(Tools): 사용자 요청에 따라 실행 가능한 함수 제공
-프롬프트(Prompts): 특정 작업을 수행하기 위한 템플릿 제공
-10분이면 충분합니다. 지금 바로 시작해보세요!
-MCP 서버 구축하기
+- **리소스(Resources):** 파일, 데이터베이스, API 응답 등 읽기 전용 데이터 제공
+- **도구(Tools):** 사용자 요청에 따라 실행 가능한 함수 제공
+- **프롬프트(Prompts):** 특정 작업을 수행하기 위한 템플릿 제공
+
+10분이면 충분합니다. 지금 바로 시작해보세요! <br/>
+[[MCP 서버 구축하기]](https://modelcontextprotocol.io/docs/getting-started/intro)
 
 <br/>
 
@@ -50,14 +54,15 @@ MCP 서버 구축하기
 ## MCP 서버 구축을 위한 사전 준비
 MCP 서버를 구축하기 전에 필요한 소프트웨어와 하드웨어를 준비해야 합니다. 아래는 필수 준비 사항입니다.
 
-필요한 소프트웨어 및 하드웨어 요구사항
-운영 체제: Windows, macOS, Linux
-Python 3.10 이상: MCP SDK 설치를 위해 필요
-Claude Desktop: MCP 서버 테스트 및 통합 (macOS, Windows 지원)
-MCP 프레임워크 다운로드 및 설치 - Python 버전
+### 필요한 소프트웨어 및 하드웨어 요구사항
+- 운영 체제: Windows, macOS, Linux
+- Python 3.10 이상: MCP SDK 설치를 위해 필요
+- Claude Desktop: MCP 서버 테스트 및 통합 (macOS, Windows 지원)
+
+### MCP 프레임워크 다운로드 및 설치 - Python 버전
 MCP 프레임워크는 MCP 서버의 핵심입니다.
 
-Python:
+**Python:**
 ```python
 # uv 설치 (권장)
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -70,7 +75,7 @@ source .venv/bin/activate
 uv add "mcp[cli]" httpx
 ```
 
-개발 환경 설정
+### 개발 환경 설정
 VS Code나 Cursor AI 와 같은 IDE를 사용하면 개발 생산성을 높일 수 있습니다.
 
 <br/>
@@ -81,8 +86,9 @@ VS Code나 Cursor AI 와 같은 IDE를 사용하면 개발 생산성을 높일 �
 ## MCP 서버 구축 단계별 가이드
 이제 MCP 서버를 구축하는 구체적인 단계를 살펴보겠습니다.
 
-1. 기본 MCP 서버 구현
-Python을 이용한 기본 서버 구현
+### 1. 기본 MCP 서버 구현
+
+#### Python을 이용한 기본 서버 구현
 - 프로젝트 생성 및 설정 방법
 ```shell
 # 프로젝트를 위한 새 디렉토리 생성
@@ -146,7 +152,7 @@ def format_alert(feature: dict) -> str:
 """
 ```
 
-도구 실행 구현
+#### 도구 실행 구현
 도구 실행 핸들러는 각 도구의 로직을 실제로 실행하는 역할을 합니다:
 ```python
 @mcp.tool()
@@ -205,7 +211,7 @@ async def get_forecast(latitude: float, longitude: float) -> str:
     return "\n---\n".join(forecasts)
 ```
 
-서버 실행
+#### 서버 실행
 마지막으로 서버를 초기화하고 실행합니다:
 
 if __name__ == "__main__":
@@ -218,10 +224,10 @@ uv run weather.py
 
 이제 기존 MCP 호스트(예: Claude for Desktop)에서 서버를 테스트할 수 있습니다.
 
-2. 리소스(Resources) 추가하기
+### 2. 리소스(Resources) 추가하기
 리소스는 LLM이 읽을 수 있는 데이터를 제공합니다. 다음은 간단한 리소스 구현 예제입니다:
 
-Python 리소스 예제
+**Python 리소스 예제**
 ```python
 from mcp.server.fastmcp import FastMCP
 
@@ -243,10 +249,10 @@ if __name__ == "__main__":
     mcp.run(transport='stdio')
 ```
 
-3. 도구(Tools) 구현하기
+### 3. 도구(Tools) 구현하기
 도구는 LLM이 사용자 요청에 따라 실행할 수 있는 함수입니다. 다음은 간단한 날씨 정보 제공 도구 예제입니다:
 
-Python 도구 예제
+**Python 도구 예제**
 ```python
 from mcp.server.fastmcp import FastMCP
 import httpx
@@ -311,10 +317,10 @@ if __name__ == "__main__":
 
 ```
 
-4. 프롬프트(Prompts) 구현하기
+### 4. 프롬프트(Prompts) 구현하기
 프롬프트는 LLM에게 특정 작업 수행을 위한 템플릿을 제공합니다:
 
-Python 프롬프트 예제
+**Python 프롬프트 예제**
 ```python
 from mcp.server.fastmcp import FastMCP
 
@@ -357,23 +363,34 @@ if __name__ == "__main__":
 ## Claude Desktop과 MCP 서버 연결하기
 개발한 MCP 서버를 Claude Desktop과 연결하는 방법은 다음과 같습니다:
 
-Claude Desktop 설정 방법
-Claude Desktop 다운로드 및 설치
+### Claude Desktop 설정 방법
 
-macOS 또는 Windows용 Claude Desktop을 다운로드하여 설치합니다 (Linux는 아직 지원되지 않음)
-이미 설치되어 있다면 Claude 메뉴에서 "Check for Updates..."를 선택하여 최신 버전으로 업데이트
-Claude Desktop 구성 파일 설정
+- 1. Claude Desktop 다운로드 및 설치
 
-Claude 메뉴에서 "Settings..." 선택 (앱 내의 Claude Account Settings가 아님)
-Claude Desktop 설정 메뉴
+  - macOS 또는 Windows용 Claude Desktop을 다운로드하여 설치합니다 (Linux는 아직 지원되지 않음)
+  - 이미 설치되어 있다면 Claude 메뉴에서 "Check for Updates..."를 선택하여 최신 버전으로 업데이트
 
-왼쪽 메뉴에서 "Developer" 선택 후 "Edit Config(설정 편집)" 클릭
-Claude Desktop MCP 설정 화면
+- 2. Claude Desktop 구성 파일 설정
 
-구성 파일 위치:
-macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
-Windows: %APPDATA%\Claude\claude_desktop_config.json
-구성 파일에 MCP 서버 정보 추가:
+  - Claude 메뉴에서 "Settings..." 선택 (앱 내의 Claude Account Settings가 아님)
+
+| ![그림2](./img/fig02_claude-desktop-setting.png) |
+|:---:|
+| Fig2. Claude Desktop 설정 메뉴 |
+
+  - 왼쪽 메뉴에서 "Developer" 선택 후 "Edit Config(설정 편집)" 클릭
+
+| ![그림3](./img/fig03_claude-desktop-mcp-setting.png) |
+|:---:|
+| Fig3. Claude Desktop MCP 설정 화면 |
+
+
+  - 구성 파일 위치:
+    - macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
+    - Windows: %APPDATA%\Claude\claude_desktop_config.json
+
+- 3. 구성 파일에 MCP 서버 정보 추가:
+```json
 {
     "mcpServers": {
         "weather": {
@@ -387,17 +404,20 @@ Windows: %APPDATA%\Claude\claude_desktop_config.json
         }
     }
 }
+```
 
-Claude Desktop 재시작
-연결 확인 및 테스트
-Claude Desktop 시작
-채팅 인터페이스에서 MCP 도구 아이콘(망치 아이콘) 클릭
-서버 목록에서 연결할 MCP 서버 선택
-리소스, 도구 또는 프롬프트를 사용하여 테스트
+- 4. Claude Desktop 재시작
+
+### 연결 확인 및 테스트
+- 1. Claude Desktop 시작
+- 2. 채팅 인터페이스에서 MCP 도구 아이콘(망치 아이콘) 클릭
+- 3. 서버 목록에서 연결할 MCP 서버 선택
+- 4. 리소스, 도구 또는 프롬프트를 사용하여 테스트
+
 예시 명령:
 
-"오늘 서울의 날씨는 어때?"
-"내일 뉴욕의 날씨 예보를 보여줘."
+- "오늘 서울의 날씨는 어때?"
+- "내일 뉴욕의 날씨 예보를 보여줘."
 
 
 <br/>
