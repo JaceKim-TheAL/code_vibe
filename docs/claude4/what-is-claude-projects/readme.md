@@ -205,7 +205,7 @@ GPT에 대해 궁금하시고 관심 있으신 분들을 위하여 GPT 개발 �
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center;">
     <div style="border-radius: 12px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;"><img
-            src="./img/how-to-create-gpt.jpeg" alt="책 표지" style="width: 100%; height: auto; display: block;"></div>
+            src="./img/how-to-create-gpt.jpeg" alt="책 표지" style="width: 300; height: auto; display: block;"></div>
     <div style="display: flex; flex-direction: column; gap: 16px;">
         <h1 style="font-size: 24px; font-weight: bold; color: rgb(30, 58, 138);">제가 만든 GPT는 당신이 만든 GPT와 전혀 다릅니다</h1>
         <h2 style="font-size: 18px; color: rgb(30, 64, 175);">상위 1% GPT를 만드는 가장 쉬운 방법</h2>
