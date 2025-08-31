@@ -234,16 +234,13 @@ GPT에 대해 궁금하시고 관심 있으신 분들을 위하여 GPT 개발 �
                 <a
                     href="https://product.kyobobook.co.kr/detail/S000213361898" target="_blank"
                     rel="noopener noreferrer"
-                    style="display: inline-flex; align-items: center; justify-content: center; background-color: rgb(37, 99, 235); color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-size: 14px; font-weight: bold; transition: 0.3s; width: auto; transform: translateY(0px); box-shadow: none;">교보문고에서
-                    구매하기</a><br/>
+                    style="display: inline-flex; align-items: center; justify-content: center; background-color: rgb(37, 99, 235); color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-size: 14px; font-weight: bold; transition: 0.3s; width: auto; transform: translateY(0px); box-shadow: none;">[교보문고에서 구매하기]</a><br/>
                 <a href="https://www.yes24.com/Product/Goods/126690034" target="_blank"
                     rel="noopener noreferrer"
-                    style="display: inline-flex; align-items: center; justify-content: center; background-color: rgb(37, 99, 235); color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-size: 14px; font-weight: bold; transition: 0.3s; width: auto; transform: translateY(0px); box-shadow: none;">예스24에서
-                    구매하기</a><br/>
+                    style="display: inline-flex; align-items: center; justify-content: center; background-color: rgb(37, 99, 235); color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-size: 14px; font-weight: bold; transition: 0.3s; width: auto; transform: translateY(0px); box-shadow: none;">[예스24에서 구매하기]</a><br/>
                 <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=340054033" target="_blank"
                     rel="noopener noreferrer"
-                    style="display: inline-flex; align-items: center; justify-content: center; background-color: rgb(37, 99, 235); color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-size: 14px; font-weight: bold; transition: 0.3s; width: auto; transform: translateY(0px); box-shadow: none;">알라딘에서
-                    구매하기</a><br/>
+                    style="display: inline-flex; align-items: center; justify-content: center; background-color: rgb(37, 99, 235); color: white; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-size: 14px; font-weight: bold; transition: 0.3s; width: auto; transform: translateY(0px); box-shadow: none;">[알라딘에서 구매하기]</a><br/>
             </div>
         </td>
     </tr>
