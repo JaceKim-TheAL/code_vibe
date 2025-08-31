@@ -1,4 +1,4 @@
-# INDEX :: 클로드(Claude) AI
+# INDEX of Claude AI
 
 - [클로드(Claude) AI 총정리](./claude_ai_summary.md)
   - [Claude 3.5 사용법 총정리](./claude-3.5-sonnet-complete-guide/)
