@@ -210,8 +210,8 @@ GPT에 대해 궁금하시고 관심 있으신 분들을 위하여 GPT 개발 �
             </div>
         </td>
         <td>
-            <h1 style="font-size: 24px; font-weight: bold; color: rgb(30, 58, 138);">제가 만든 GPT는 당신이 만든 GPT와 전혀 다릅니다</h1>
-            <h2 style="font-size: 18px; color: rgb(30, 64, 175);">상위 1% GPT를 만드는 가장 쉬운 방법</h2>
+            <h2 style="font-size: 24px; font-weight: bold; color: rgb(30, 58, 138);">제가 만든 GPT는 당신이 만든 GPT와 전혀 다릅니다</h1>
+            <h3 style="font-size: 18px; color: rgb(30, 64, 175);">상위 1% GPT를 만드는 가장 쉬운 방법</h2>
             <p style="font-size: 16px; color: rgb(75, 85, 99);">고성능 AI 챗봇을 누구나 쉽게 만들 수 있는 방법을 배워보세요!</p>
         </td>
     </tr>
