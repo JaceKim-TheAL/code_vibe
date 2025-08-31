@@ -80,8 +80,9 @@ claude
 
 실행 하면 아래와 같은 온보딩 화면과 초기 설정 화면을 통해 초기 설정을 할 수 있습니다. 
 
-| ![그림2](./img/fig02_claude-code-onboarding.png) |
+| ![그림2-1](./img/fig02_1_claude-code-onboarding.png) |
 |:---:|
+| ![그림2-2](./img/fig02_2_claude-initial-setting.png)|
 | Fig2. 클로드 코드 온보딩 화면 클로드 코드 초기 설정 화면 |
 
 - Anthropic 계정으로 로그인합니다.
