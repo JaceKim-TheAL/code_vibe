@@ -156,9 +156,9 @@ ChatGPT 프롬프트 엔지니어링 가이드 에서는 ChatGPT 프롬프트 �
 프롬프트 엔지니어링을 학습하고 실습할 수 있는 유용한 사이트를 소개합니다.
 
 ### 프롬프트 엔지니어링 학습에 유용한 사이트
-- OpenAI 프롬프트 엔지니어링 공식 문서: ChatGPT와 같은 모델의 사용법과 프롬프트 작성 팁을 제공합니다. [OpenAI 프롬프트 엔지니어링 공식 가이드](https://platform.openai.com/docs/guides/prompt-engineering)
-- 클로드 프롬프트 라이브러리: 클로드에 최적화된 프롬프트 예시 제공 [클로드 프롬프트 라이브러리](https://docs.anthropic.com/en/prompt-library/library)
-- Prompt Engineering Guide: 다양한 프롬프트 작성 예시와 기술을 제공합니다. [Prompt Engineering Guide](https://www.promptingguide.ai/)
+- OpenAI 프롬프트 엔지니어링 공식 문서: ChatGPT와 같은 모델의 사용법과 프롬프트 작성 팁을 제공합니다. [[OpenAI 프롬프트 엔지니어링 공식 가이드]](https://platform.openai.com/docs/guides/prompt-engineering)
+- 클로드 프롬프트 라이브러리: 클로드에 최적화된 프롬프트 예시 제공 [[클로드 프롬프트 라이브러리]](https://docs.anthropic.com/en/prompt-library/library)
+- Prompt Engineering Guide: 다양한 프롬프트 작성 예시와 기술을 제공합니다. [[Prompt Engineering Guide]](https://www.promptingguide.ai/)
 
 ### 추천 사이트별 주요 특징과 장점
 각 사이트는 실습 예제와 가이드를 통해 프롬프트 엔지니어링 기술을 향상시킬 수 있는 자료를 제공합니다.
