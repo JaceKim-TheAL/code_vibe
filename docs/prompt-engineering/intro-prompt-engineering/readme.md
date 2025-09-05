@@ -6,7 +6,7 @@
 - [2. 프롬프트의 예시](#2-프롬프트의-예시)
 - [3. 프롬프트 설계 팁](#3-프롬프트-설계-팁)
 - [4. 결론](#4-결론)
-- [참고자료](#-참고자료-) 
+- [참고자료](#참고자료) 
 
 ---
 # 프롬프트 엔지니어링 방법: ChatGPT 200% 활용 하기 - 입문편
@@ -112,7 +112,8 @@ Place: Champalimaud Centre for the Unknown, Lisbon
 
 [[TOP]](#index)
 
-## ** 참고자료 **
+---
+## 참고자료
 
 https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/guides/prompts-intro.md
 
