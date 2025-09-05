@@ -38,68 +38,88 @@
 
 API 요청을 위해서는 대시보드에서 API 키를 발급받아야 합니다. 아래와 같이 진행하세요.
 
-#### 1. Anthropic API 페이지 접속
+#### 1. [Anthropic API 페이지](https://www.anthropic.com/api) 접속
 
 | ![그림1](./img/fig01_claude-api-main.png) |
 |:---:|
 | Fig1. 클로드 API 메인 페이지 |
 
-'Get started now' 버튼을 클릭 하여 Claude 콘솔 대시보드 페이지로 이동 합니다. https://console.anthropic.com/ 링크를 통해 직접 접속할 수도 있습니다.
+'Get started now' 버튼을 클릭 하여 Claude 콘솔 대시보드 페이지로 이동 합니다. 
+https://console.anthropic.com/ 링크를 통해 직접 접속할 수도 있습니다.
 
 #### 2. Claude API 대시보드 접속
-대시보드에 접속 하면 아래와 같은 화면을 볼 수 있습니다. Claude API 대시보드 화면
+대시보드에 접속 하면 아래와 같은 화면을 볼 수 있습니다. 
+
+| ![그림2](./img/fig02_claude-api-dashboard.png) |
+|:---:|
+| Fig2. Claude API 대시보드 화면 |
 
 프롬프트 작업을 할 수 있는 Workbench 부터, 프롬프트 생성기, 프롬프트를 모아둔 프롬프트 라이브러리 등 다양한 기능을 제공합니다. 다양한 기능이 있지만 이번에는 API 키를 발급 받는 방법에 대해 알아보겠습니다.
 
 #### 3. API 키 발급 받기
 위 화면에서 "Get API Keys" 버튼 클릭하면 API 키를 발급 받을 수 있는 페이지로 이동합니다.
 
-Claude API 키 받기
+| ![그림3](./img/fig03_claude-api-get-apikey.png) |
+|:---:|
+| Fig3. Claude API 키 받기 |
 
 "Create key" 버튼 클릭하고 새 API 키 이름 입력 후 "Create" 클릭하면 새로운 API 키가 생성됩니다.
 
-Claude API 키 생성
+| ![그림4](./img/fig04_claude-api-create-apikey.png) |
+|:---:|
+| Fig4. Claude API 키 생성 |
 
 #### 4. 생성된 API 키 확인 (보안을 위해 잘 보관할 것)
-키가 생성되면 아래와 같이 API 키가 생성된 것을 확인할 수 있습니다. API 키는 보안을 위해 잘 보관해야 하며, 노출되지 않도록 주의해야 합니다. Claude API 키 발급 예시
+키가 생성되면 아래와 같이 API 키가 생성된 것을 확인할 수 있습니다. API 키는 보안을 위해 잘 보관해야 하며, 노출되지 않도록 주의해야 합니다. 
+
+| ![그림5](./img/fig05_claude-api-apikey-created.png) |
+|:---:|
+| Fig5. Claude API 키 발급 예시 |
 
 이제 API 키를 사용해 Claude API에 요청을 보낼 준비가 되었습니다.
 
-### Python 개발 환경 설정하기
-Python 버전 확인
-먼저 컴퓨터에 Python이 설치되어 있는지, 그리고 버전이 맞는지 확인합니다. 터미널이나 명령 프롬프트에서 다음 명령어를 입력해보세요.
+<br/>
 
+### Python 개발 환경 설정하기
+
+#### Python 버전 확인
+먼저 컴퓨터에 Python이 설치되어 있는지, 그리고 버전이 맞는지 확인합니다. 터미널이나 명령 프롬프트에서 다음 명령어를 입력해보세요.
+```shell
 python --version
+```
 
 만약 Python 3.7.1 이상 버전이 표시되지 않는다면 Python 공식 웹사이트에서 최신 버전을 다운로드 받으세요.
 
-가상환경 생성 (선택사항)
+#### 가상환경 생성 (선택사항)
 가상환경을 사용하면 프로젝트별로 독립된 Python 환경을 구성할 수 있어 패키지 충돌을 방지할 수 있습니다. 아래 명령어로 가상환경을 만들어봅시다.
-
+```shell
 python -m venv claudeenv
-
+```
 
 그리고 생성한 가상환경을 활성화합니다.
 
-macOS / Linux: source claudeenv/bin/activate
-Windows: claudeenv\Scripts\activate
-Anthropic Python SDK 설치하기
+  - macOS / Linux: source claudeenv/bin/activate
+  - Windows: claudeenv\Scripts\activate
+
+
+### Anthropic Python SDK 설치하기
 Python 환경 설정을 마쳤다면 이제 클로드 API와 연동할 수 있는 Anthropic Python SDK를 설치할 차례입니다.
-
+```shell
 pip install anthropic
-
+```
 
 위 명령어를 실행하면 클로드 API 사용에 필요한 라이브러리와 종속성 패키지가 한 번에 설치됩니다.
 
-API 키 설정하기 (선택사항)
+#### API 키 설정하기 (선택사항)
 매번 API 키를 입력하는 번거로움을 피하고 싶다면, 환경변수로 저장해두는 것이 좋습니다. 아래 단계를 따라 진행해보세요.
 
-macOS / Linux
+**macOS / Linux**
 터미널에서 nano ~/.zshrc (또는 nano ~/.bash_profile) 입력
 에디터에 export ANTHROPIC_API_KEY=your_api_key 한 줄 추가
 변경사항 저장 후 에디터 종료
 source ~/.zshrc (또는 source ~/.bash_profile) 실행해 적용
-Windows
+
+**Windows**
 시작 메뉴에서 "환경 변수 편집" 검색 후 선택
 "환경 변수" 버튼 클릭
 "시스템 변수" 항목의 "새로 만들기" 버튼 클릭
