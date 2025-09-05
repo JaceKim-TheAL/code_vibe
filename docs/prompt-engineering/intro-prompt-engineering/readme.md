@@ -60,39 +60,59 @@
 ## 2. 프롬프트의 예시
 프롬프트 엔지니어링을 더 잘 이해하기 위해 몇 가지 예시를 살펴보겠습니다:
 
-1) 기본 프롬프트:
-프롬프트
+### 1) 기본 프롬프트:
+
+```shell
+🚨 프롬프트
 하늘은
+```
 
-출력
+```shell
+🚨 출력
 "파란색입니다. 맑은 날에는 하늘이 파란색입니다. 흐린 날에는 하늘이 회색이거나 흰색일 수 있습니다."
+```
 
-2) 지시문을 추가한 프롬프트:
-프롬프트
+### 2) 지시문을 추가한 프롬프트:
+
+```shell
+🚨 프롬프트
 다음 문장을 완성하세요: 하늘은
+```
 
-출력
+```shell
+🚨 출력
 "오늘 너무 아름답습니다."
+```
 
-3) 특정 작업을 수행하도록 지시하는 프롬프트:
-프롬프트
+### 3) 특정 작업을 수행하도록 지시하는 프롬프트:
+
+```shell
+🚨 프롬프트
 다음 텍스트를 스페인어로 번역하세요: Text: "hello!"
+```
 
-출력
+```shell
+🚨 출력
 "¡Hola!"
+```
 
-4) 특정 정보를 추출하도록 지시하는 프롬프트:
-프롬프트
+### 4) 특정 정보를 추출하도록 지시하는 프롬프트:
+
+```shell
+🚨 프롬프트
 다음 텍스트에서 장소 이름을 추출하세요.
 
-원하는 형식(Desired format):
-Place: 'comma_separated_list_of_company_names'
-Input:
+  1. 원하는 형식(Desired format):
+  • Place: 'comma_separated_list_of_company_names'
+
+  2. Input:
 Although these developments are encouraging to researchers, much is still a mystery. “We often have a black box between the brain and the effect we see in the periphery,” says Henrique Veiga-Fernandes, a neuroimmunologist at the Champalimaud Centre for the Unknown in Lisbon. “If we want to use it in the therapeutic context, we need to understand the mechanism.
+```
 
-출력
+```shell
+🚨 출력
 Place: Champalimaud Centre for the Unknown, Lisbon
-
+```
 <br/>
 
 [[TOP]](#index)
@@ -101,13 +121,15 @@ Place: Champalimaud Centre for the Unknown, Lisbon
 ## 3. 프롬프트 설계 팁
 프롬프트를 설계할 때는 다음과 같은 일반적인 팁을 기억해야 합니다.
 
-프롬프트를 설계 팁
+| ![그림2](./img/fig02_prompt-engineering-design-tip.jpg) |
+|:---:|
+| Fig2. 프롬프트를 설계 팁 |
 
-간단하게 시작하기. (Start Simple)
-지시문을 잘 작성하기. (The Instruction)
-구체적으로 작성하기. (Specificity)
-불명확함을 피하기. (Avoid Impreciseness)
-무엇을 하지 말아야 하는지보다 무엇을 해야 하는지에 집중하기. (To do or not to do?)
+- 간단하게 시작하기. (Start Simple)
+- 지시문을 잘 작성하기. (The Instruction)
+- 구체적으로 작성하기. (Specificity)
+- 불명확함을 피하기. (Avoid Impreciseness)
+- 무엇을 하지 말아야 하는지보다 무엇을 해야 하는지에 집중하기. (To do or not to do?)
 <br/>
 
 [[TOP]](#index)
