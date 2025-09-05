@@ -8,4 +8,4 @@
   - [프롬프트 엔지니어링의 기본 구조와 프롬프트 작성 예시](./basic-prompt-engineering-guide/)
   - [언어 모델 최적화를 위한 고급 프롬프트 엔지니어링 가이드](./advanced-prompt-engineering-guide/)
 
-  - [AWS 프롬프트 엔지니어링](./aws-prompt-engineering/)
+- [AWS 프롬프트 엔지니어링](./aws-prompt-engineering/)
