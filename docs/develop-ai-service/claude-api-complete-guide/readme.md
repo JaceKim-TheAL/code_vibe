@@ -38,17 +38,20 @@
 
 API 요청을 위해서는 대시보드에서 API 키를 발급받아야 합니다. 아래와 같이 진행하세요.
 
-1. Anthropic API 페이지 접속
-클로드 API 메인 페이지
+#### 1. Anthropic API 페이지 접속
+
+| ![그림1](./img/fig01_claude-api-main.png) |
+|:---:|
+| Fig1. 클로드 API 메인 페이지 |
 
 'Get started now' 버튼을 클릭 하여 Claude 콘솔 대시보드 페이지로 이동 합니다. https://console.anthropic.com/ 링크를 통해 직접 접속할 수도 있습니다.
 
-2. Claude API 대시보드 접속
+#### 2. Claude API 대시보드 접속
 대시보드에 접속 하면 아래와 같은 화면을 볼 수 있습니다. Claude API 대시보드 화면
 
 프롬프트 작업을 할 수 있는 Workbench 부터, 프롬프트 생성기, 프롬프트를 모아둔 프롬프트 라이브러리 등 다양한 기능을 제공합니다. 다양한 기능이 있지만 이번에는 API 키를 발급 받는 방법에 대해 알아보겠습니다.
 
-3. API 키 발급 받기
+#### 3. API 키 발급 받기
 위 화면에서 "Get API Keys" 버튼 클릭하면 API 키를 발급 받을 수 있는 페이지로 이동합니다.
 
 Claude API 키 받기
@@ -57,7 +60,7 @@ Claude API 키 받기
 
 Claude API 키 생성
 
-4. 생성된 API 키 확인 (보안을 위해 잘 보관할 것)
+#### 4. 생성된 API 키 확인 (보안을 위해 잘 보관할 것)
 키가 생성되면 아래와 같이 API 키가 생성된 것을 확인할 수 있습니다. API 키는 보안을 위해 잘 보관해야 하며, 노출되지 않도록 주의해야 합니다. Claude API 키 발급 예시
 
 이제 API 키를 사용해 Claude API에 요청을 보낼 준비가 되었습니다.
