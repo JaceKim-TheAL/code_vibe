@@ -113,17 +113,17 @@ pip install anthropic
 #### API 키 설정하기 (선택사항)
 매번 API 키를 입력하는 번거로움을 피하고 싶다면, 환경변수로 저장해두는 것이 좋습니다. 아래 단계를 따라 진행해보세요.
 
-**macOS / Linux**
-터미널에서 nano ~/.zshrc (또는 nano ~/.bash_profile) 입력
-에디터에 export ANTHROPIC_API_KEY=your_api_key 한 줄 추가
-변경사항 저장 후 에디터 종료
-source ~/.zshrc (또는 source ~/.bash_profile) 실행해 적용
+**macOS / Linux** <br/>
+❶ 터미널에서 nano ~/.zshrc (또는 nano ~/.bash_profile) 입력 <br/>
+❷ 에디터에 export ANTHROPIC_API_KEY=your_api_key 한 줄 추가 <br/>
+❸ 변경사항 저장 후 에디터 종료 <br/>
+❹ source ~/.zshrc (또는 source ~/.bash_profile) 실행해 적용 <br/>
 
-**Windows**
-시작 메뉴에서 "환경 변수 편집" 검색 후 선택
-"환경 변수" 버튼 클릭
-"시스템 변수" 항목의 "새로 만들기" 버튼 클릭
-변수 이름에 ANTHROPIC_API_KEY, 값에 발급받은 API 키 입력
+**Windows** <br/>
+❶ 시작 메뉴에서 "환경 변수 편집" 검색 후 선택 <br/>
+❷ ❸ ❹"환경 변수" 버튼 클릭 <br/>
+❸ "시스템 변수" 항목의 "새로 만들기" 버튼 클릭 <br/>
+❹ 변수 이름에 ANTHROPIC_API_KEY, 값에 발급받은 API 키 입력 <br/>
 
 <br/>
 
