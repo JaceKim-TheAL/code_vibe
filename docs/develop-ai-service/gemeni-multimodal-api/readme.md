@@ -9,7 +9,7 @@
 # 제미나이 (Gemeni) API 사용법 완벽 가이드 - 구글의 최신 멀티모달 AI 모델을 사용하여 LLM 서비스 개발하기
 인공지능 기술의 급속한 발전으로 다양한 AI 모델들이 등장하고 있습니다. 그 중에서도 구글이 개발한 제미나이(Gemini) API는 뛰어난 성능과 다양한 기능으로 주목받고 있습니다. 이 글에서는 제미나이 API의 주요 특징과 사용법을 상세히 알아보고, 이를 활용해 어떻게 혁신적인 AI 서비스를 개발할 수 있는지 살펴보겠습니다.
 
-제미나이 (Gemeni) API 란?
+## 제미나이 (Gemeni) API 란?
 제미나이 (Gemeni) API는 구글이 개발한 최신 멀티모달 AI 모델로, 텍스트 생성부터 이미지 인식, 복잡한 추론 작업까지 다양한 기능을 제공합니다. 특히 텍스트와 이미지를 동시에 입력으로 받아 처리할 수 있는 멀티모달 기능은 제미나이의 가장 큰 특징 중 하나입니다.
 
 제미나이 API 소개
@@ -23,7 +23,13 @@
 대화형 AI 구현: 자연스러운 대화를 나눌 수 있는 챗봇을 개발할 수 있습니다.
 JSON 형식 응답: 구조화된 데이터 출력이 가능합니다.
 100만 토큰 컨텍스트: 대규모 데이터를 처리하고 이해할 수 있는 긴 컨텍스트 윈도우를 제공합니다.
-제미나이 (Gemeni) API 사용법
+
+<br/>
+
+[[TOP]](#index)
+
+---
+## 제미나이 (Gemeni) API 사용법
 제미나이 API를 사용하기 위해서는 몇 가지 준비 단계가 필요합니다. 이 섹션에서는 API 키 설정부터 SDK 설치, 모델 초기화까지의 과정을 단계별로 살펴보겠습니다.
 
 API 키 설정하기
@@ -55,7 +61,12 @@ genai.configure(api_key=os.environ["GEMENI_API_KEY"])
 
 model = genai.GenerativeModel('gemini-1.5-flash')
 
-제미나이 API 주요 기능 살펴보기
+<br/>
+
+[[TOP]](#index)
+
+---
+## 제미나이 API 주요 기능 살펴보기
 제미나이 API는 다양한 기능을 제공합니다. 이 섹션에서는 주요 기능들을 자세히 살펴보고, 각 기능의 사용 예시를 코드와 함께 설명하겠습니다.
 
 1. 텍스트 생성
@@ -108,7 +119,7 @@ for chunk in response:
 
 5. JSON 형식 응답 받기
 구조화된 데이터가 필요한 경우, JSON 형식으로 응답을 받을 수 있습니다.
-
+```python
 response = model.generate_content(
     "List 5 popular cookie recipes",
     generation_config=genai.GenerationConfig(
@@ -125,10 +136,16 @@ response = model.generate_content(
     )
 )
 print(response.text)
+```
 
 이 코드는 5가지 인기 쿠키 레시피를 JSON 형식으로 반환합니다.
 
-Gemeni API와 Streamlit으로 영어 이야기 생성기 만들기
+<br/>
+
+[[TOP]](#index)
+
+---
+## Gemeni API와 Streamlit으로 영어 이야기 생성기 만들기
 Gemini API와 Streamlit으로 간단한 Gemeni API 기반 영어 이야기 생성기를 만들어보겠습니다.
 
 만들어 볼 애플리케이션은 다음과 같은 기능을 갖습니다:
@@ -146,8 +163,8 @@ pip install streamlit google-generativeai pillow requests
 export GEMINI_API_KEY='your_api_key_here'
 
 2. 코드 구현
-이제 app.py 파일을 만들고 다음 코드를 작성합니다:
-
+이제 `app.py` 파일을 만들고 다음 코드를 작성합니다:
+```python
 import streamlit as st
 import google.generativeai as genai
 import os
@@ -208,20 +225,30 @@ if st.button("Generate Story"):
         st.warning("Please enter a topic.")
 
 st.markdown("---")
+```
 
 3. 코드 설명
 generate_story(topic): Gemini API를 사용하여 주어진 주제에 대한 짧은 영어 이야기를 생성합니다.
 main(): Streamlit 앱의 주요 로직을 구현합니다. 사용자 입력을 받고, 이야기와 이미지를 생성하여 표시합니다.
+
 4. 애플리케이션 실행
 터미널에서 다음 명령어를 실행하여 Streamlit 앱을 시작합니다:
-
+```shell
 streamlit run app.py
+```
 
 이렇게 실행한 후, 브라우저에서 http://localhost:8501로 접속하여 애플리케이션을 확인할 수 있습니다.
 
-아래 결과와 같이 사용자가 입력한 주제에 대한 이야기가 생성되어 표시됩니다: Gemeni API 와 Streamlit을 활용한 영어 이야기 생성기
+아래 결과와 같이 사용자가 입력한 주제에 대한 이야기가 생성되어 표시됩니다: 
 
-제미나이 API 활용 사례
+Gemeni API 와 Streamlit을 활용한 영어 이야기 생성기
+
+<br/>
+
+[[TOP]](#index)
+
+---
+## 제미나이 API 활용 사례
 제미나이 API는 다양한 분야에서 활용될 수 있습니다. 여기서는 몇 가지 실제 활용 사례를 살펴보겠습니다.
 
 개인화된 콘텐츠 생성: 사용자의 선호도와 이전 활동을 바탕으로 맞춤형 기사, 광고, 추천 등을 생성할 수 있습니다.
@@ -234,7 +261,12 @@ streamlit run app.py
 
 코드 생성 및 디버깅 지원: 프로그래머를 위한 코드 자동 생성 및 디버깅 제안 도구를 만들 수 있습니다.
 
-제미나이 API 사용 시 주의사항
+<br/>
+
+[[TOP]](#index)
+
+---
+## 제미나이 API 사용 시 주의사항
 제미나이 API를 사용할 때는 다음과 같은 점들을 주의해야 합니다:
 
 API 키 보안: API 키를 안전하게 관리하고, 공개 저장소에 업로드하지 않도록 주의해야 합니다.
@@ -247,13 +279,29 @@ API 키 보안: API 키를 안전하게 관리하고, 공개 저장소에 업로
 
 개인정보 보호: 사용자의 개인정보가 포함된 데이터를 처리할 때는 관련 법규를 준수해야 합니다.
 
-결론
+<br/>
+
+[[TOP]](#index)
+
+---
+## 결론
 제미나이 API는 구글의 최신 AI 기술을 손쉽게 사용할 수 있게 해주는 강력한 도구입니다. 텍스트 생성, 이미지 인식, 대화형 AI 구현 등 다양한 기능을 제공하여 혁신적인 AI 서비스 개발을 가능하게 합니다.
 
 이 가이드에서 소개한 기본적인 사용법을 바탕으로, 여러분만의 창의적인 AI 애플리케이션을 개발해보세요. 제미나이 API의 잠재력은 무한하며, 여러분의 상상력이 그 한계를 정할 것입니다.
 
 더 자세한 내용은 공식 문서를 참조하세요. 제미나이 API를 활용한 여러분의 혁신적인 프로젝트를 기대합니다!
 
-참고 자료
-제미나이 API 공식 문서
-제미나이 API 쿡북
+<br/>
+
+[[TOP]](#index)
+
+---
+## 참고자료
+- [제미나이 API 공식 문서](https://ai.google.dev/gemini-api/docs?hl=ko)
+- [제미나이 API 쿡북](https://github.com/google-gemini/cookbook/tree/main)
+
+<br/>
+
+[[TOP]](#index)
+
+---
