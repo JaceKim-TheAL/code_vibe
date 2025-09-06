@@ -114,16 +114,16 @@ pip install anthropic
 매번 API 키를 입력하는 번거로움을 피하고 싶다면, 환경변수로 저장해두는 것이 좋습니다. 아래 단계를 따라 진행해보세요.
 
 **macOS / Linux** <br/>
-❶ 터미널에서 nano ~/.zshrc (또는 nano ~/.bash_profile) 입력 <br/>
-❷ 에디터에 export ANTHROPIC_API_KEY=your_api_key 한 줄 추가 <br/>
+❶ 터미널에서 `nano ~/.zshrc` (또는 `nano ~/.bash_profile`) 입력 <br/>
+❷ 에디터에 `export ANTHROPIC_API_KEY=your_api_key` 한 줄 추가 <br/>
 ❸ 변경사항 저장 후 에디터 종료 <br/>
-❹ source ~/.zshrc (또는 source ~/.bash_profile) 실행해 적용 <br/>
+❹ `source ~/.zshrc` (또는 `source ~/.bash_profile`) 실행해 적용 <br/>
 
 **Windows** <br/>
 ❶ 시작 메뉴에서 "환경 변수 편집" 검색 후 선택 <br/>
-❷ ❸ ❹"환경 변수" 버튼 클릭 <br/>
+❷ "환경 변수" 버튼 클릭 <br/>
 ❸ "시스템 변수" 항목의 "새로 만들기" 버튼 클릭 <br/>
-❹ 변수 이름에 ANTHROPIC_API_KEY, 값에 발급받은 API 키 입력 <br/>
+❹ 변수 이름에 `ANTHROPIC_API_KEY`, 값에 발급받은 API 키 입력 <br/>
 
 <br/>
 
@@ -131,8 +131,9 @@ pip install anthropic
 
 ---
 ## Claude API에 첫 요청 보내기
-자, 이제 클로드에게 첫 번째 API 요청을 보낼 준비가 되었습니다. claude_test.py 같은 파이썬 파일을 새로 만들고 아래 코드를 작성해보세요.
-
+자, 이제 클로드에게 첫 번째 API 요청을 보낼 준비가 되었습니다. 
+`claude_test.py` 같은 파이썬 파일을 새로 만들고 아래 코드를 작성해보세요.
+```python
 import os
 import anthropic
 
@@ -150,14 +151,13 @@ response = client.messages.create(
 
 print(response.content[0].text.strip())
 
+```
 
+코드를 실행하려면 터미널에서 해당 파일이 있는 디렉토리로 이동한 뒤 `python claude_test.py` 를 입력하세요.
 
-
-코드를 실행하려면 터미널에서 해당 파일이 있는 디렉토리로 이동한 뒤 python claude_test.py를 입력하세요.
-
-
+```shell
 안녕하세요! 저는 엘론 머스크입니다. 혁신적인 아이디어와 기술로 세상을 변화시키고자 노력하고 있죠. 우주 탐사, 전기 자동차, 친환경 에너지 등 다양한 분야에서 새로운 도전을 계속하고 있습니다. 무엇을 궁금해 하시나요?
-
+```
 
 
 클로드가 마치 엘론 머스크와 같이 답변 하는것을 볼 수 있습니다. 이제 여러분의 창의적인 아이디어로 클로드를 활용해보세요!
@@ -168,14 +168,17 @@ print(response.content[0].text.strip())
 
 ---
 ## 프롬프트를 작성하기 좋은 콘솔 Workbench 활용하기
-Claude API를 호출하기 앞서 사용할 프롬프트를 미리 작성하고 테스트해보고 싶다면 Claude 콘솔의 Workbench를 활용해보세요.
+Claude API를 호출하기 앞서 사용할 프롬프트를 미리 작성하고 테스트해보고 싶다면 [Claude 콘솔의 Workbench](https://console.anthropic.com/login?selectAccount=true&returnTo=%2Fworkbench%3F) 를 활용해보세요.
 
-Claude 콘솔 Workbench
+| ![그림6](./img/fig06_claude-workbench.png) |
+|:---:|
+| Fig6. Claude 콘솔 Workbench |
 
-System Prompt: 챗봇에게 전달할 시스템 메시지 (역할, 태스크 지시 등)
-User message: 사용자 입력 메시지를 입력
-Model: Haiku, Sonnet, Opus 등 원하는 모델 선택
-Run: 버튼 클릭 시 응답 결과 확인
+- System Prompt: 챗봇에게 전달할 시스템 메시지 (역할, 태스크 지시 등)
+- User message: 사용자 입력 메시지를 입력
+- Model: Haiku, Sonnet, Opus 등 원하는 모델 선택
+- Run: 버튼 클릭 시 응답 결과 확인
+
 콘솔에서 프롬프트를 테스트해보면서 모델별 응답의 차이, 프롬프트 디자인에 따른 결과 변화 등을 손쉽게 비교해볼 수 있습니다.
 
 <br/>
@@ -186,19 +189,36 @@ Run: 버튼 클릭 시 응답 결과 확인
 ## Claude 모델 비교하기
 Claude API에서 사용할 수 있는 Claude 3에는 Haiku, Sonnet, Opus 세 가지 버전이 있습니다. 각 모델의 특징과 장점을 간략히 정리했으니 용도에 맞는 모델을 선택하는 데 참고해보세요.
 
-모델	하이쿠	소넷	오푸스
-용도	- 실시간 상호작용
-- 콘텐츠 모더레이션
-- 최적화된 비용 효율 작업	- 방대한 데이터 처리
-- 컨텐츠 마케팅/영업
-- 시간 절약 작업 자동화	- 복잡한 문제 해결
-- 연구 개발
-- 전략 및 분석
-특징	빠른 응답 속도,
-효율성	균형 잡힌 성능
-부담 없는 가격	최상위 지능 수준
-난이도 높은 태스크
-컨텍스트	200K	200K	200K
+<table>
+    <thead>
+        <tr>
+            <th>모델</th>
+            <th>하이쿠</th>
+            <th>소넷</th>
+            <th>오푸스</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>용도</td>
+            <td>- 실시간 상호작용 <br> - 콘텐츠 모더레이션 <br> - 최적화된 비용 효율 작업</td>
+            <td>- 방대한 데이터 처리 <br> - 컨텐츠 마케팅/영업 <br> - 시간 절약 작업 자동화</td>
+            <td>- 복잡한 문제 해결 <br> - 연구 개발 <br> - 전략 및 분석</td>
+        </tr>
+        <tr>
+            <td>특징</td>
+            <td>빠른 응답 속도, <br> 효율성</td>
+            <td>균형 잡힌 성능 <br> 부담 없는 가격</td>
+            <td>최상위 지능 수준 <br> 난이도 높은 태스크</td>
+        </tr>
+        <tr>
+            <td>컨텍스트</td>
+            <td>200K</td>
+            <td>200K</td>
+            <td>200K</td>
+        </tr>
+    </tbody>
+</table>
 
 <br/>
 
