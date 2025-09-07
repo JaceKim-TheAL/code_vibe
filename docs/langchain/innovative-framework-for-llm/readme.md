@@ -4,8 +4,12 @@
 
 - [랭체인 (LangChain) 이란?](#랭체인-langchain-이란)
 - [LangChain의 주요 구성 요소](#langchain-을-활용한-간단한-llm-애플리케이션-구축)
-  - []()
-  - []()
+  - [랭체인 코어 (langchain-core)](#랭체인-코어-langchain-core)
+  - [랭체인 커뮤니티 (langchain-community)](#랭체인-커뮤니티-langchain-community)
+  - [LangChain](#langchain)
+  - [LangGraph](#langgraph)
+  - [LangServe](#langserve)
+  - [LangSmith](#langsmith)
 - [개발 단계별 지원 요소](#개발-단계별-지원-요소)
   - []()
   - []()
@@ -91,19 +95,22 @@ REST API 배포: LangChain 체인을 REST API로 배포하여 다른 애플리�
 
 ---
 ## 개발 단계별 지원 요소
-1. 개발 (Development) 단계 지원
+
+### 1. 개발 (Development) 단계 지원
 LangChain은 개발자들이 LLM 기반 애플리케이션을 쉽고 빠르게 구축할 수 있도록 다양한 도구를 제공합니다:
 
 오픈소스 빌딩 블록: LangChain은 다양한 오픈소스 컴포넌트를 제공하여 개발자가 필요한 기능을 쉽게 조합하고 확장할 수 있습니다.
 서드파티 통합: 다양한 외부 서비스와의 통합을 지원하여 개발 과정을 더욱 효율적으로 만듭니다.
 템플릿: 미리 정의된 템플릿을 통해 개발자는 빠르게 프로젝트를 시작할 수 있습니다.
-2. 프로덕션 (Production) 단계 지원
+
+### 2. 프로덕션 (Production) 단계 지원
 LangSmith를 통해 개발된 애플리케이션의 품질을 지속적으로 개선할 수 있습니다:
 
 검사 및 모니터링: 애플리케이션의 동작을 실시간으로 모니터링하고 분석할 수 있습니다.
 평가: 다양한 메트릭을 통해 애플리케이션의 성능을 평가할 수 있습니다.
 최적화: 수집된 데이터를 바탕으로 지속적인 최적화가 가능합니다.
-3. 배포 (Devloyment) 단계 지원
+
+### 3. 배포 (Devloyment) 단계 지원
 LangServe를 통해 개발된 LangChain 결과물을 쉽게 API로 배포할 수 있습니다:
 
 REST API 변환: 복잡한 LLM 체인을 간단한 REST API로 변환할 수 있습니다.
