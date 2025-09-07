@@ -2,7 +2,24 @@
 
 ### INDEX
 
-- []()
+- [랭체인 (LangChain) 이란?](#랭체인-langchain-이란)
+- [LangChain의 주요 구성 요소](#langchain-을-활용한-간단한-llm-애플리케이션-구축)
+  - []()
+  - []()
+- [개발 단계별 지원 요소](#개발-단계별-지원-요소)
+  - []()
+  - []()
+  - []()
+- [LangChain 을 활용한 간단한 LLM 애플리케이션 구축](#langchain-을-활용한-간단한-llm-애플리케이션-구축)
+  - []()
+  - []()
+  - []()
+  - []()
+  - []()
+  - []()
+  - []()
+  - []()
+- [결론](#결론)
 
 ---
 # 랭체인 (LangChain) 이란? LLM 서비스 개발을 위한 혁신적인 프레임워크
@@ -19,7 +36,7 @@
 ## LangChain의 주요 구성 요소
 LangChain 프레임워크는 다음과 같은 핵심 라이브러리로 구성되어 있습니다:
 
-랭체인 코어 (langchain-core)
+### 랭체인 코어 (langchain-core)
 기본 추상화: LangChain 프레임워크의 기초를 형성하는 기본 구성 요소들을 제공합니다. 이는 체인, 에이전트, 데이터 변환기 등을 포함합니다.
 
 랭체인 코어 구성 요소
@@ -33,7 +50,8 @@ LangChain 표현 언어(LCEL:LangChain Expression Language): LCEL은 복잡한 �
 스트리밍 (Streaming): 실시간 데이터 처리를 지원합니다.
 비동기 처리 (Async): 비동기 작업을 통해 응답성을 향상시킵니다.
 구성 (Composition): 복잡한 작업을 단순하게 결합하여 처리합니다.
-랭체인 커뮤니티 (langchain-community)
+
+### 랭체인 커뮤니티 (langchain-community)
 서드파티 통합: 다양한 외부 라이브러리와 도구를 통합하여 LangChain의 기능을 확장합니다.
 
 랭체인 커뮤니티 구성 요소
@@ -41,7 +59,8 @@ LangChain 표현 언어(LCEL:LangChain Expression Language): LCEL은 복잡한 �
 모델 I/O (Model I/O): 모델, 프롬프트, 예제 선택기, 출력 파서 등의 I/O 작업을 지원합니다.
 검색 (Retrieval): 데이터 검색 및 로딩, 벡터 저장소, 텍스트 분할기, 임베딩 모델 등을 포함합니다.
 에이전트 도구 (Agent Tooling): 도구 및 툴킷을 제공하여 에이전트의 기능을 강화합니다.
-LangChain
+
+### LangChain
 인지 아키텍처: LangChain 애플리케이션의 인지 아키텍처를 구성하는 주요 구성 요소들을 포함합니다.
 
 LangChain 구성 요소
@@ -49,11 +68,14 @@ LangChain 구성 요소
 체인 (Chains): 작업의 순차적 흐름을 정의합니다.
 에이전트 (Agents): 특정 작업을 수행하는 독립적인 엔티티입니다.
 검색 전략 (Retrieval Strategies): 필요한 데이터를 효율적으로 검색하는 방법을 정의합니다.
-LangGraph
+
+### LangGraph
 그래프 구조: 복잡한 다중 액터 애플리케이션을 그래프 구조로 구축할 수 있게 지원합니다. 이는 여러 에이전트 간의 상호작용을 명확하게 시각화하고 관리할 수 있게 합니다.
-LangServe
+
+### LangServe
 REST API 배포: LangChain 체인을 REST API로 배포하여 다른 애플리케이션과의 연동을 용이하게 합니다. 이는 체인의 기능을 웹 서비스로 제공할 수 있게 합니다.
-LangSmith
+
+### LangSmith
 개발자 플랫폼: LLM 애플리케이션의 디버깅, 테스트, 평가, 모니터링을 지원하는 종합적인 개발자 도구를 제공합니다.
 디버깅 (Debugging): 코드의 오류를 찾아 수정할 수 있는 도구를 제공합니다.
 테스트 (Testing): 애플리케이션의 기능을 검증할 수 있는 테스트 환경을 제공합니다.
