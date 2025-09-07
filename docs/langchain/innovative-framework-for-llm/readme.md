@@ -15,11 +15,11 @@
   - [2. 프로덕션 (Production) 단계 지원](#2-프로덕션-production-단계-지원)
   - [3. 배포 (Devloyment) 단계 지원](#3-배포-devloyment-단계-지원)
 - [LangChain 을 활용한 간단한 LLM 애플리케이션 구축](#langchain-을-활용한-간단한-llm-애플리케이션-구축)
-  - []()
-  - []()
-  - []()
-  - []()
-  - []()
+  - [1. 필요한 라이브러리 설치](#1-필요한-라이브러리-설치)
+  - [2. OpenAI API 키 설정](#2-openai-api-키-설정)
+  - [3. 필요한 라이브러리 임포트](#3-필요한-라이브러리-임포트)
+    - [1) 먼저 필요한 라이브러리들을 임포트합니다.](#)
+    - []()
   - []()
   - []()
   - []()
@@ -142,7 +142,7 @@ API 키 발급 방법이 궁금하다면 ChatGPT API 사용 방법 중 API 키 �
 
 ### 3. 필요한 라이브러리 임포트
 
-#### 1. 먼저 필요한 라이브러리들을 임포트합니다.
+#### (1) 먼저 필요한 라이브러리들을 임포트합니다.
 ```python
 import os
 from langchain_core.prompts import ChatPromptTemplate
@@ -151,12 +151,12 @@ from langchain_openai import ChatOpenAI
 
 ```
 
-#### 2. 언어 모델 초기화
+#### (2) 언어 모델 초기화
 OpenAI의 GPT 모델을 사용하기 위해 OpenAI 클래스를 초기화합니다. 여기서 temperature 파라미터는 모델의 창의성을 조절합니다. 0에 가까울수록 더 일관된 출력을, 1에 가까울수록 더 다양하고 창의적인 출력을 생성합니다.
 ```python 
 model = ChatOpenAI(temperature=0.7)
 ```
-#### 3. 프롬프트 템플릿 정의
+#### (3) 프롬프트 템플릿 정의
 번역을 위한 프롬프트 템플릿을 정의합니다. 이 템플릿은 두 개의 입력 변수를 가집니다: 번역할 언어와 번역할 한국어 텍스트입니다.
 ```python
 system_template = "다음 한국어 텍스트를 {language}로 번역하세요:"
@@ -166,19 +166,19 @@ prompt_template = ChatPromptTemplate.from_messages([
 ])
 
 ```
-#### 4. 출력 파서 정의
+#### (4) 출력 파서 정의
 LLM의 출력을 단순 문자열로 파싱하기 위해 StrOutputParser를 사용합니다.
 ```python
 output_parser = StrOutputParser()
 ```
 
-#### 5. 전체 파이프라인 구성
+#### (5) 전체 파이프라인 구성
 이제 프롬프트 템플릿, LLM 체인, 출력 파서를 하나의 파이프라인으로 연결합니다.
 ```python
 translation_chain = prompt_template | model | parser
 ```
 
-#### 6. 번역 애플리케이션 실행
+#### (6) 번역 애플리케이션 실행
 이제 우리의 번역 애플리케이션을 실행해볼 수 있습니다.
 ```python
 result = translation_chain.invoke({"language": "영어", "text": "안녕하세요, 오늘 기분이 어떠신가요?"})
@@ -187,7 +187,7 @@ print(result)
 
 이 코드를 실행하면 "안녕하세요, 오늘 기분이 어떠신가요?"라는 한국어 텍스트가 영어로 번역되어 출력됩니다.
 
-#### 7. 전체 코드 실행
+#### (7) 전체 코드 실행
 지금까지 작성한 코드를 하나로 합쳐보겠습니다.
 
 ```python
