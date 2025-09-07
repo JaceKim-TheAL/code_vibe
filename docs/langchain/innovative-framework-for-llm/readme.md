@@ -11,9 +11,9 @@
   - [LangServe](#langserve)
   - [LangSmith](#langsmith)
 - [개발 단계별 지원 요소](#개발-단계별-지원-요소)
-  - []()
-  - []()
-  - []()
+  - [1. 개발 (Development) 단계 지원](#1-개발-development-단계-지원)
+  - [2. 프로덕션 (Production) 단계 지원](#2-프로덕션-production-단계-지원)
+  - [3. 배포 (Devloyment) 단계 지원](#3-배포-devloyment-단계-지원)
 - [LangChain 을 활용한 간단한 LLM 애플리케이션 구축](#langchain-을-활용한-간단한-llm-애플리케이션-구축)
   - []()
   - []()
@@ -125,14 +125,13 @@ REST API 변환: 복잡한 LLM 체인을 간단한 REST API로 변환할 수 있
 ## LangChain 을 활용한 간단한 LLM 애플리케이션 구축
 랭체인을 사용하여 간단한 LLM 애플리케이션을 구축하는 과정을 상세히 살펴보겠습니다. 이 예제에서는 한국어 텍스트를 다른 언어로 번역하는 애플리케이션을 만들어보겠습니다.
 
-1. 필요한 라이브러리 설치
+### 1. 필요한 라이브러리 설치
 먼저 필요한 라이브러리들을 설치 합니다.
 
 
 pip install langchain_core langchain_openai python-dotenv
 
-
-2. OpenAI API 키 설정
+### 2. OpenAI API 키 설정
 그리고 OpenAI API 키를 설정하기 위해 .env 파일을 생성하고 API 키를 설정합니다.
 
 
@@ -141,49 +140,54 @@ OPENAI_API_KEY=your_api_key_here
 
 API 키 발급 방법이 궁금하다면 ChatGPT API 사용 방법 중 API 키 발급 방법에서 확인 할 수 있습니다.
 
-3. 필요한 라이브러리 임포트
-먼저 필요한 라이브러리들을 임포트합니다.
+### 3. 필요한 라이브러리 임포트
 
+#### 1. 먼저 필요한 라이브러리들을 임포트합니다.
+```python
 import os
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_openai import ChatOpenAI
 
+```
 
-2. 언어 모델 초기화
+#### 2. 언어 모델 초기화
 OpenAI의 GPT 모델을 사용하기 위해 OpenAI 클래스를 초기화합니다. 여기서 temperature 파라미터는 모델의 창의성을 조절합니다. 0에 가까울수록 더 일관된 출력을, 1에 가까울수록 더 다양하고 창의적인 출력을 생성합니다.
-
+```python 
 model = ChatOpenAI(temperature=0.7)
-
-3. 프롬프트 템플릿 정의
+```
+#### 3. 프롬프트 템플릿 정의
 번역을 위한 프롬프트 템플릿을 정의합니다. 이 템플릿은 두 개의 입력 변수를 가집니다: 번역할 언어와 번역할 한국어 텍스트입니다.
-
+```python
 system_template = "다음 한국어 텍스트를 {language}로 번역하세요:"
 prompt_template = ChatPromptTemplate.from_messages([
     ('system', system_template),
     ('user', '{text}')
 ])
 
-
-4. 출력 파서 정의
+```
+#### 4. 출력 파서 정의
 LLM의 출력을 단순 문자열로 파싱하기 위해 StrOutputParser를 사용합니다.
-
+```python
 output_parser = StrOutputParser()
+```
 
-5. 전체 파이프라인 구성
+#### 5. 전체 파이프라인 구성
 이제 프롬프트 템플릿, LLM 체인, 출력 파서를 하나의 파이프라인으로 연결합니다.
-
+```python
 translation_chain = prompt_template | model | parser
+```
 
-7. 번역 애플리케이션 실행
+#### 6. 번역 애플리케이션 실행
 이제 우리의 번역 애플리케이션을 실행해볼 수 있습니다.
-
+```python
 result = translation_chain.invoke({"language": "영어", "text": "안녕하세요, 오늘 기분이 어떠신가요?"})
 print(result)
+```
 
 이 코드를 실행하면 "안녕하세요, 오늘 기분이 어떠신가요?"라는 한국어 텍스트가 영어로 번역되어 출력됩니다.
 
-8. 전체 코드 실행
+#### 7. 전체 코드 실행
 지금까지 작성한 코드를 하나로 합쳐보겠습니다.
 
 ```python
@@ -249,7 +253,7 @@ python translate.py
 
 랭체인 번역 어플리케이션 결과 예시
 
-상세 설명
+#### 상세 설명
 언어 모델 (LLM) 초기화:
 
 ChatOpenAI 클래스를 사용하여 GPT 모델을 초기화합니다.
@@ -276,7 +280,8 @@ invoke 메서드를 사용하여 파이프라인을 실행합니다.
 모듈성: 각 컴포넌트(LLM, 프롬프트 템플릿, 체인, 파서)는 독립적으로 정의되고 쉽게 교체 가능합니다.
 유연성: 다양한 유형의 LLM, 프롬프트, 출력 처리 방식을 쉽게 통합할 수 있습니다.
 파이프라인 구성: 여러 컴포넌트를 연결하여 복잡한 작업 흐름을 만들 수 있습니다.
-확장 가능성
+
+#### 확장 가능성
 이 기본 구조를 바탕으로 다양한 방식으로 애플리케이션을 확장할 수 있습니다:
 
 다중 언어 지원: 한국어를 여러 다른 언어로 번역할 수 있도록 확장할 수 있습니다.
