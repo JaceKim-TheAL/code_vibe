@@ -9,7 +9,7 @@
 - [Web Research에서 OpenAI Deep Research 활용하기](#web-research에서-openai-deep-research-활용하기)
 - [OpenAI Deep Research의 미래와 전망](#openai-deep-research의-미래와-전망)
 - [OpenAI Deep Research로 리서치 혁신하기](#openai-deep-research로-리서치-혁신하기)
-- [참고자료](#딥리서치-deepresearch-동작-과정)
+- [참고자료](#참고자료)
 
 ---
 # 딥리서치 (Deep Research) 란? 기존 AI 대비 26.6% 향상된 정확도, 전문가급 리서치 분석 사용법
