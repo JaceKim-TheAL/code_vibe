@@ -2,7 +2,7 @@
 
 - [클로드4(Claude4) AI 총정리](./claude4_guide/)
   - [클로드4 (Claude4) 완벽 가이드 | 코딩, 고급 추론, AI 에이전트 작업의 혁신](./claude4_guide/)
-  - [](./claude-artifacts-usage-guide/)
+  - [클로드 아티팩트 (Claude Artifacts) 사용법 - 클로드의 혁신적인 AI 협업 도구](./claude-artifacts-usage-guide/)
   - [클로드 분석 도구 (Analysis Tool) 사용법 - 클로드 AI 데이터 분석, AI기반 인사이트 추출](./claude-analysis-tool-usage-guide/)
   - [클로드 프로 사용 제한 가이드 - 제한을 피하고 AI 챗봇의 최고 성능 끌어내기](./claude-usage-limit/)
   - [클로드 프로젝트(Claude Projects)란? GPTs와 같은 맞춤형 클로드 사용법](./what-is-claude-projects/)
