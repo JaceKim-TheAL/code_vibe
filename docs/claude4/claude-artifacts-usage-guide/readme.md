@@ -96,8 +96,10 @@
 ## 클로드 아티펙트 (Claude Artifects) 를 활용해서 3분만에 영어 이야기 생성기 AI 웹서비스 만들기
 Anthropic의 최신 AI 모델인 클로드 3.5 소넷과 함께 출시된 아티펙트 기능을 이용해 3분 만에 AI 웹서비스를 만드는 방법을 알아보겠습니다. 아래 Youtube 영상은 아티펙트 기능을 이용해 3분 만에 영어 이야기 생성기 AI 웹서비스를 만드는 방법을 보여줍니다.
 
+| [![그림6](./img/fig06_artifacts-ai_web_service.png)](https://www.youtube.com/watch?v=PU5P8PaeiYM) |
+|:---:|
+| Fig6. 클로드 아티펙트 (Artifects)로 3분만에 AI 웹서비스 만들기 |
 
-클로드 아티펙트 (Artifects)로 3분만에 AI 웹서비스 만들기
 
 (마이크가 없어 소리가 잘 안들리는 점 미리 양해 부탁 드립니다. ㅠㅠ )
 
