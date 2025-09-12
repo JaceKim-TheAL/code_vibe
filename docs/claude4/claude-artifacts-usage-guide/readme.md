@@ -99,9 +99,7 @@ Anthropic의 최신 AI 모델인 클로드 3.5 소넷과 함께 출시된 아티
 | [![그림6](./img/fig06_artifacts-ai_web_service.png)](https://www.youtube.com/watch?v=PU5P8PaeiYM) |
 |:---:|
 | Fig6. 클로드 아티펙트 (Artifects)로 3분만에 AI 웹서비스 만들기 |
-
-
-(마이크가 없어 소리가 잘 안들리는 점 미리 양해 부탁 드립니다. ㅠㅠ )
+| (마이크가 없어 소리가 잘 안들리는 점 미리 양해 부탁 드립니다.) |
 
 <br/>
 
