@@ -23,7 +23,7 @@
 ## 챗GPT (ChatGPT) 란 무엇인가?
 챗GPT(ChatGPT)는 OpenAI에서 개발한 대화형 인공지능 모델로, 인간과 유사한 대화를 생성할 수 있는 기술입니다. 이 기술은 **GPT(Generative Pre-trained Transformer)** 라는 언어 모델을 기반으로 하며, 자연어 처리(NLP) 기술을 활용해 텍스트 데이터를 학습하고 이를 바탕으로 응답을 생성합니다.
 
-| ![그림1](./images/0101_chatgpt-screen.png) |
+| ![그림1](./img/fig01_chatgpt-screen.png) |
 |:---:|
 | Fig1. 챗GPT 사용자 인터페이스와 대화 화면 |
 
@@ -44,7 +44,7 @@ GPT와 챗GPT의 가장 큰 차이점은 용도와 최적화 방식에 있습니
 ### GPT 모델의 구조와 학습 방식
 GPT 모델은 **트랜스포머(Transformer)** 라는 딥러닝 아키텍처를 기반으로 합니다. 트랜스포머는 입력된 텍스트 데이터를 분석하고, 이를 바탕으로 다음에 올 단어를 예측하는 방식으로 작동합니다. 학습 과정에서는 대규모 텍스트 데이터를 사용하여 언어의 문법, 문맥, 의미를 학습합니다. 이를 통해 GPT는 다양한 주제에 대해 높은 수준의 응답을 생성할 수 있습니다.
 
-| ![그림2](./images/0102_gpt-model-workflow.png) |
+| ![그림2](./img/fig02_gpt-model-workflow.png) |
 |:---:|
 | Fig2. 챗GPT의 GPT 모델 작동 방식을 설명하는 워크플로우 |
 
@@ -65,7 +65,7 @@ GPT 모델은 **트랜스포머(Transformer)** 라는 딥러닝 아키텍처를 
 ### 챗GPT의 주요 기능과 특징
 챗GPT는 인공지능 기술을 기반으로 한 대화형 AI 도구로, 자연어 처리 능력을 통해 사용자와 자연스러운 대화가 가능합니다. 특히 텍스트 생성, 코드 작성, 분석, 번역 등 다양한 작업을 수행할 수 있어 개인과 기업 모두에게 유용한 도구로 자리잡았습니다.
 
-| ![그림3](./images/0103_chatgpt-feature.png) |
+| ![그림3](./img/fig03_chatgpt-feature.png) |
 |:---:|
 | Fig3. 챗GPT의 주요 기능과 특징을 보여주는 인포그래픽 |
 
@@ -87,7 +87,7 @@ GPT 모델은 **트랜스포머(Transformer)** 라는 딥러닝 아키텍처를 
 ## ChatGPT를 잘 써야 하는 3가지 이유
 AI 시대의 핵심 도구인 ChatGPT는 단순한 대화형 AI를 넘어 우리의 일상과 업무를 혁신적으로 변화시키고 있습니다. ChatGPT를 반드시 활용해야 하는 주요한 이유를 살펴보겠습니다.
 
-| ![그림4](./images/0104_3-reasons-why-using-chatgpt.png) |
+| ![그림4](./img/fig04_3-reasons-why-using-chatgpt.png) |
 |:---:|
 | Fig4. 챗GPT 사용해야 하는 이유 3가지 |
 
@@ -122,7 +122,7 @@ ChatGPT를 활용하면 업무 처리 시간을 대폭 단축하고 결과물의
 ## 챗GPT의 현재와 미래
 챗GPT는 현재 AI 기술의 선두주자로 자리 잡고 있으며, 앞으로도 지속적인 발전이 기대됩니다.
 
-| ![그림5](./images/0105_chatgpt-future.png) |
+| ![그림5](./img/fig05_chatgpt-future.png) |
 |:---:|
 | Fig5. 챗GPT의 미래 발전 방향과 가능성을 설명하는 다이어그램 |
 
