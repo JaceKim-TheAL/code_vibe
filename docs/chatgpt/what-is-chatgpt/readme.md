@@ -1,4 +1,4 @@
-🏠 > 챗GPT 완벽가이드 >
+🏠 > 챗GPT 완벽가이드 > `챗GPT (ChatGPT) 란? AI 시대를 이끄는 차세대 기술의 현재와 미래`
 <!-- https://www.magicaiprompts.com/docs/chatgpt/what-is-chatgpt/ -->
 
 ### INDEX
